@@ -171,7 +171,9 @@ h1,h2,h3,h4,h5,h6{
 .ui-panel-position-right.ui-panel-open{
     right: -17em;
 }
-
+form#searchform .ui-btn-text{
+    display: none;
+}
 /*
 = Media Queries
 ------------------------------------------*/

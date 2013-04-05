@@ -4,7 +4,7 @@
             <input type="text" value="" name="s" id="s" placeholder="<?php _e('Search the site.', 'smart_foundation'); ?>">
         </div>
         <div class="small-4 columns">
-            <input type="submit" id="searchsubmit" value="<?php _e('Search', 'smart_foundation'); ?>" class="prefix button">
+            <input type="submit" id="searchsubmit" value="<?php echo __('Search', 'smart_foundation'); ?>" class="prefix button">
         </div>
     </div>
 </form>
