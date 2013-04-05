@@ -44,21 +44,27 @@ if ( $paged >= 2 || $page >= 2 )
     <div id="jmwrapper" data-role="page">
         
         <div id="wrapper" data-role="content">
-            <div class="contain-to-grid sticky">
-                <!-- Starting the Top-Bar -->
-                <nav class="top-bar">
-                    <ul class="title-area">
-                        <li class="toggle-topbar panelbtn menu-icon"><a href="#panel-left" class="leftbtn"><span></span></a></li>
+            
+            <!-- Starting the Top-Bar -->
+            <nav class="nav-bar show-for-small">
+                <div class="row inner-nav-bar">
+                    <ul>
+                         <?php if(is_active_sidebar('panel-left')): ?>
+                            <li class="panelbtn panel-leftbtn"><a href="#panel-left" class="leftbtn"><span></span></a></li>
+                        <?php endif; ?>
                         <li class="name">
                             <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                         </li>
+                        <?php if(is_active_sidebar('panel-left')): ?>
                         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                        <li class="toggle-topbar menu-icon"><a href="#panel-right" class="rightbtn"><span><?php _e('Menu', 'smart_foundation' ); ?></span></a></li>
+                            <li class="panelbtn panel-rightbtn"><a href="#panel-right" class="rightbtn"><span><?php _e('Menu', 'smart_foundation' ); ?></span></a></li>
+                        <?php endif; ?>
                     </ul>
-                </nav>
-        
-                <!-- End of Top-Bar -->
-            </div>
+                </div>
+            </nav>
+    
+            <!-- End of Top-Bar -->
+            
             
             <div id="page" class="row">
                 <div id="inner-page" class="large-12 columns">

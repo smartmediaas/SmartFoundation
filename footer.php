@@ -30,7 +30,7 @@
             </div>
         </div>
         
-        <?php if(is_active_sidebar('sidebar-1')): ?>
+        <?php if(is_active_sidebar('panel-left')): ?>
         <div id="panel-left" data-role="panel"  data-position="left" data-display="overlay">		
             <?php dynamic_sidebar('panel-left'); ?>
         </div>

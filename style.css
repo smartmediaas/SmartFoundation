@@ -31,6 +31,7 @@ body{
 }
 #page{
     background: #ffffff;
+    margin-top: 45px;
     margin-bottom: 14px;
 }
 #main{
@@ -171,6 +172,71 @@ h1,h2,h3,h4,h5,h6{
 .ui-panel-position-right.ui-panel-open{
     right: -17em;
 }
+.nav-bar{
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    background: #111;
+    width: 100%;
+    z-index: 999;
+}
+.nav-bar .inner-nav-bar{
+    position: relative;
+    width: 100%;
+}
+.nav-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar .panelbtn{
+    top: 50%;
+    margin-top: -16px;
+    position: absolute;
+    padding-left: 0;
+    width: 40px;
+}
+.nav-bar .panel-rightbtn{
+    right: 15px;
+
+}
+.nav-bar .name{
+    height: 45px;
+    margin: 0 0 0 55px;
+    font-size: 16px;
+}
+.nav-bar .name h1{
+    line-height: 45px;
+    font-size: 1.0625em;
+    margin: 0;
+}
+.nav-bar .name h1 a{
+    color: #fff;
+}
+.nav-bar .panelbtn a{
+    text-indent: -48px;
+    width: 34px;
+    height: 34px;
+    line-height: 33px;
+    padding: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 0.8125em;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.nav-bar .panelbtn a span{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 16px;
+    height: 0;
+    -webkit-box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+}
 form#searchform .ui-btn-text{
     display: none;
 }
@@ -178,9 +244,9 @@ form#searchform .ui-btn-text{
 = Media Queries
 ------------------------------------------*/
 @media only screen and (min-width: 768px) {
-    /*body{
-        padding-top: 0 !important;
-    }*/
+    #page{
+        margin-top: 0;
+    }
     #site-header{
 		border: none;
 	}
