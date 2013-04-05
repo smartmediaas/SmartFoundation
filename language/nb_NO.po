@@ -1,0 +1,194 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Foundation 4 v1.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-03-21 23:19:18+0000\n"
+"Last-Translator: smadmin <post@smartmedia.no>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Norwegian-Nynorsk\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:7
+#, php-format
+#@ smart_foundation
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: comments.php:8
+#, php-format
+#@ smart_foundation
+msgid "%1$s"
+msgstr ""
+
+#: comments.php:9
+#@ smart_foundation
+msgid "(Edit)"
+msgstr "(Rediger)"
+
+#: comments.php:14
+#@ smart_foundation
+msgid "Your comment is awaiting moderation."
+msgstr "Kommentaren din avventer behandling."
+
+#: comments.php:30
+#@ smart_foundation
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Vennligst ikke last denne siden directe. Takk!"
+
+#: comments.php:35
+#@ smart_foundation
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dette innlegget er passordbelagt. Legg inn passordet for å se kommentarene."
+
+#: comments.php:45
+#@ smart_foundation
+msgid "No Responses to"
+msgstr "Ingen kommentarer til"
+
+#: comments.php:45
+#@ smart_foundation
+msgid "One Response to"
+msgstr "En kommentar til"
+
+#: comments.php:45
+#@ smart_foundation
+msgid "% Responses to"
+msgstr "% kommentarer til"
+
+#: comments.php:52
+#@ smart_foundation
+msgid "&larr; Older comments"
+msgstr "&laquo; Eldre kommentarer"
+
+#: comments.php:53
+#@ smart_foundation
+msgid "Newer comments &rarr;"
+msgstr "Nyere kommentarer &raquo;"
+
+#: comments.php:62
+#@ smart_foundation
+msgid "Comments are closed."
+msgstr "Kommentarer er stengt."
+
+#: comments.php:69
+#@ smart_foundation
+msgid "Leave a Reply"
+msgstr "Legg igjen et svar"
+
+#: comments.php:69
+#, php-format
+#@ smart_foundation
+msgid "Leave a Reply to %s"
+msgstr "Legg igjen et svar til %s"
+
+#: comments.php:72
+#, php-format
+#@ smart_foundation
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du må være <a href=\"%s\">innlogget</a> for å kunne kommentere."
+
+#: comments.php:76
+#, php-format
+#@ smart_foundation
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Innlogget som <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: comments.php:76
+#@ smart_foundation
+msgid "Log out of this account"
+msgstr "Logg ut av denne kontoen"
+
+#: comments.php:76
+#@ smart_foundation
+msgid "Log out &raquo;"
+msgstr "Logg ur &raquo;"
+
+#: comments.php:79
+#@ smart_foundation
+msgid "Name"
+msgstr "Navn"
+
+#: comments.php:79
+#: comments.php:83
+#@ smart_foundation
+msgid " (required)"
+msgstr "(obligatorisk)"
+
+#: comments.php:83
+#@ smart_foundation
+msgid "Email (will not be published)"
+msgstr "E-post (vil ikke bli offentliggjort)"
+
+#: comments.php:87
+#@ smart_foundation
+msgid "Website"
+msgstr "Hjemmeside"
+
+#: comments.php:92
+#@ smart_foundation
+msgid "Comment"
+msgstr "Kommenter"
+
+#: comments.php:96
+#@ smart_foundation
+msgid "Submit Comment"
+msgstr "Send kommentar"
+
+#: functions.php:161
+#@ smart_foundation
+msgid "Sidemarg"
+msgstr "Sidemarg"
+
+#: functions.php:170
+#@ smart_foundation
+msgid "Hovedside"
+msgstr "Hovedside"
+
+#: functions.php:179
+#@ smart_foundation
+msgid "Bunnområde 1"
+msgstr "Bunnområde 1"
+
+#: functions.php:188
+#@ smart_foundation
+msgid "Bunnområde 2"
+msgstr "Bunnområde 2"
+
+#: functions.php:197
+#@ smart_foundation
+msgid "Bunnområde 3"
+msgstr "Bunnområde 3"
+
+#: header.php:32
+#, php-format
+#@ toolbox
+msgid "Page %s"
+msgstr "Side %s"
+
+#: comments.php:95
+#@ smart_foundation
+msgid "You can use these tags:"
+msgstr "Du kan bruke disse taggene:"
+
+#: searchform.php:7
+#@ smart_foundation
+msgid "Search"
+msgstr "Søk"
+
+#: searchform.php:4
+#@ smart_foundation
+msgid "Search the site."
+msgstr "Søk i nettsiden."
+
