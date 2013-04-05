@@ -17,7 +17,6 @@ function smart_foundation_setup(){
 	add_theme_support('menus');
 	register_nav_menus( array(
 		'main-menu' => 'Hovedmeny', // registers the menu in the WordPress admin menu editor
-    	'top-bar' => 'Toppmeny'
 	) );
 
 	// custom background and default background color.
