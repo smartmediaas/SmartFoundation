@@ -35,8 +35,9 @@ if ( $paged >= 2 || $page >= 2 )
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie8-grid.css">
+    <![endif]-->
     <?php wp_head(); ?>
 </head>
 
