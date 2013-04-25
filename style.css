@@ -20,7 +20,6 @@ font-family: 'Roboto', sans-serif;
 = Global
 ------------------------------------------*/
 body{
-    background: #ccc;
     color: #5a5a5a;
     font-family: 'Roboto', sans-serif;
 }
@@ -217,6 +216,63 @@ img.alignright {
 .ui-panel-position-right.ui-panel-open{
     right: -17em;
 }
+
+/*
+= Navigation bar
+------------------------------------------*/
+.nav-bar{
+    overflow: hidden;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    top: 0;
+    background: #111;
+    width: 100%;
+    z-index: 999;
+}
+.nav-bar .nav-inner{
+    position: relative;
+}
+.nav-bar .nav-inner > div{
+    display: inline-block;
+    position: absolute;
+}
+.nav-bar .panel-btn a{
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+.nav-bar #left-panel-btn{
+    top: 5px;
+    left: 0;
+    width: 40px;
+}
+.nav-bar #nav-bar-title{
+    top: 5px;
+    left: 40px;
+}
+.nav-bar #right-panel-btn{
+    top: 5px;
+    right: 0;
+    width: 40px;
+}
+.nav-bar .panel-btn a span{
+    display: block;
+    width: 16px;
+    height: 0;
+    margin: auto;
+    -webkit-box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+}
+
+
+
+/*
 .nav-bar{
     overflow: hidden;
     height: 45px;
@@ -282,10 +338,8 @@ img.alignright {
     -webkit-box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
 }
-form#searchform .ui-btn-text{
-    display: none;
-}
-/*
+*/
+
 = Media Queries
 ------------------------------------------*/
 @media only screen and (min-width: 768px) {

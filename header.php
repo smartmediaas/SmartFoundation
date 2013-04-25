@@ -42,51 +42,52 @@ if ( $paged >= 2 || $page >= 2 )
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="jmwrapper" data-role="page">
         
-        <div id="wrapper" data-role="content">
+    <!-- Starting the Top-Bar -->
+    <div class="nav-bar show-for-small">
+        <div class="row nav-inner">
+             <?php if(is_active_sidebar('panel-left')): ?>
+                <div id="left-panel-btn" class="panel-btn"><a href="#nav" id="toggle" class="left-btn"><span></span></a></div>
+            <?php endif; ?>
+            <div id="nav-bar-title">
+                <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+            </div>
+            <?php if(is_active_sidebar('panel-left')): ?>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <div id="right-panel-btn" class="panel-btn"><a href="#panel-right" class="right-btn"><span><?php //_e('Menu', 'smart_foundation' ); ?></span></a></div>
+            <?php endif; ?>
             
-            <!-- Starting the Top-Bar -->
-            <nav class="nav-bar show-for-small">
-                <div class="row inner-nav-bar">
-                    <ul>
-                         <?php if(is_active_sidebar('panel-left')): ?>
-                            <li class="panelbtn panel-leftbtn"><a href="#panel-left" class="leftbtn"><span></span></a></li>
-                        <?php endif; ?>
-                        <li class="name">
-                            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                        </li>
-                        <?php if(is_active_sidebar('panel-left')): ?>
-                        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                            <li class="panelbtn panel-rightbtn"><a href="#panel-right" class="rightbtn"><span><?php _e('Menu', 'smart_foundation' ); ?></span></a></li>
-                        <?php endif; ?>
-                    </ul>
-                </div>
-            </nav>
+        </div>
+    </div>
+
+    <!-- End of Top-Bar -->
     
-            <!-- End of Top-Bar -->
+    <?php wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav')); ?>
+    
+    <div id="page" class="row">
+        <div id="inner-page" class="large-12 columns">
+            <header id="site-header" class="row">
+                <div class="large-12 columns hide-for-small">
+                    <div id="logos" class="row">
+                        <div id="site-title" class="large-12 columns">
+                            <h1>
+                                <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                                    <?php  echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>
+                                </a>
+                            </h1>
+                            <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>
+                        </div>
+                    </div>
+                </div>               
+            </header>
+            <div id="site-banner" class="row">
+                <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php _e('Banner', 'smart_foundation'); ?>" />  
+            </div>
             
             
-            <div id="page" class="row">
-                <div id="inner-page" class="large-12 columns">
-                    <header id="site-header" class="row">
-                        <div class="large-12 columns hide-for-small">
-                            <div id="logos" class="row">
-                                <div id="site-title" class="large-12 columns">
-                                    <h1>
-                                        <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                            <?php  echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>
-                                        </a>
-                                    </h1>
-                                    <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>
-                                </div>
-                            </div>
-                        </div>                
-                    </header>
-                    
-                    <nav class="main-navigation large-12 hide-for-small" role="navigation">
-                        <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu')); ?>
-                        <hr />
-                    </nav>
-                    
-                    <section id="main" class="row">
+            <nav class="main-navigation large-12 hide-for-small" role="navigation">
+                <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu')); ?>
+            </nav>
+            
+            <div id="main" class="row">
+                <hr />
