@@ -63,7 +63,7 @@ if ( $paged >= 2 || $page >= 2 )
 
     <!-- End of Top-Bar -->
     
-    <?php wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small')); ?>
+    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small')); ?>
     
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
