@@ -2,7 +2,7 @@
     <?php if(has_post_thumbnail()){ ?>
             <?php the_post_thumbnail('thumbnail'); ?>
     <?php } ?>
-    <div <?php list_class('content'); ?>>
+    <div>
         <header>
             <h4 class="subheader">
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
