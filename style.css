@@ -256,6 +256,9 @@ img.alignright {
     top: 5px;
     left: 40px;
 }
+.nav-bar #nav-bar-title a{
+	color: #fff;
+}
 .nav-bar #right-panel-btn{
     top: 5px;
     right: 0;
