@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 		
-	<section id="primary" <?php primary_class(); ?> role="main">		
+	<section id="primary" class="large-8 columns" role="main">		
 		
 		<?php while( have_posts() ) : the_post(); ?> 
 			

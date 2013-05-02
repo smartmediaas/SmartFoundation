@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section id="primary" <?php primary_class(); ?> role="main">
+	<section id="primary" class="large-8 columns" role="main">
 		<header>
 		    <h2 id="archive-title"><?php single_cat_title(); ?></h2>
 		</header>

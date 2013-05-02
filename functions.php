@@ -56,49 +56,6 @@ function smart_foundation_setup(){
 
 add_action( 'after_setup_theme', 'smart_foundation_setup' );
 
-// #primary classes. Checking if sidebar is active and adding new classes
-function primary_class($add_classes=''){
-	if(is_page_template( 'template-fullwidth.php' ) || is_attachment() || ! is_active_sidebar('sidebar-1')){
-		$smart_return = 'large-12 columns';
-	}else{
-		$smart_return = 'large-8 columns';
-	}
-	if($add_classes) $smart_return .= ' '.$add_classes;
-	
-	echo 'class="'.$smart_return.'"';
-}
-
-// #secondary classes. Checking if sidebar is active and adding new classes
-function secondary_class($add_classes=''){
-	if(is_page_template( 'template-fullwidth.php' ) || is_attachment() || ! is_active_sidebar('sidebar-1')){
-		$smart_return = 'style="display: none;"';
-	}else{
-		$smart_return = 'large-4 columns';
-		if($add_classes) $smart_return .= ' '.$add_classes;
-		$smart_return = 'class="'.$smart_return.'"';
-	}
-	
-	echo $smart_return;
-}
-
-// list-post classes. Checking if post has thumbnail
-function list_class($arg='', $add_classes=''){
-    global $post;
-    if(has_post_thumbnail($post->ID) && ($arg==='image')){
-        $smart_return = 'class="large-4 small-4 columns"';
-        echo $smart_return;
-    }elseif(has_post_thumbnail($post->ID) && ($arg==='content')){
-        $smart_return = 'class="large-8 small-8 columns"';
-        echo $smart_return;
-    }elseif(has_post_thumbnail($post->ID) && ($arg=='')){
-        $smart_return = 'row';
-        return $smart_return;
-    }else{
-        return false;
-    }
-    return;
-}
-
 // clear function
 function smart_clear(){
     echo '<div class="smart-clear" style="clear:both;"></div>';
@@ -178,7 +135,7 @@ function smart_widgets_init(){
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
     ) );
-   
+/*   
     register_sidebar( array(
         'name' => __( 'Venstre panel', 'smart_foundation' ),
         'id' => 'panel-left',
@@ -197,7 +154,7 @@ function smart_widgets_init(){
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
     ) );
-
+*/
 //    register_sidebar( array(
 //        'name' => __( 'Hovedside', 'smart_foundation' ),
 //        'id' => 'sidebar-2',
