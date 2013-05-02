@@ -36,7 +36,7 @@ function smart_foundation_setup(){
         'width'         => 980,
         'flex-height'    => true,
         'height'        => 280,
-        'default-image' => get_template_directory_uri() . '/images/header.jpg',
+        'default-image' => get_template_directory_uri() . '/images/standard-banner.jpg',
         );
     add_theme_support( 'custom-header', $args );
     
