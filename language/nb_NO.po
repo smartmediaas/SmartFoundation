@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart Foundation 4 v1.1\n"
+"Project-Id-Version: Smart Foundation Panels 4 vv1.1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-03-21 23:19:18+0000\n"
+"PO-Revision-Date: 2013-05-03 08:25:22+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -146,27 +146,22 @@ msgstr "Kommenter"
 msgid "Submit Comment"
 msgstr "Send kommentar"
 
-#: functions.php:161
+#: functions.php:131
 #@ smart_foundation
 msgid "Sidemarg"
 msgstr "Sidemarg"
 
-#: functions.php:170
-#@ smart_foundation
-msgid "Hovedside"
-msgstr "Hovedside"
-
-#: functions.php:179
+#: functions.php:168
 #@ smart_foundation
 msgid "Bunnområde 1"
 msgstr "Bunnområde 1"
 
-#: functions.php:188
+#: functions.php:177
 #@ smart_foundation
 msgid "Bunnområde 2"
 msgstr "Bunnområde 2"
 
-#: functions.php:197
+#: functions.php:186
 #@ smart_foundation
 msgid "Bunnområde 3"
 msgstr "Bunnområde 3"
@@ -191,4 +186,19 @@ msgstr "Søk"
 #@ smart_foundation
 msgid "Search the site."
 msgstr "Søk i nettsiden."
+
+#: content-notfound.php:3
+#@ smart_foundation
+msgid "Oops! This page or post does not exist."
+msgstr "Oops! Denne siden finnes ikke."
+
+#: content-notfound.php:7
+#@ smart_foundation
+msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
+msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
+
+#: header.php:85
+#@ smart_foundation
+msgid "Banner"
+msgstr "Banner"
 
