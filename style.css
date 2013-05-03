@@ -23,9 +23,6 @@ body{
     color: #5a5a5a;
     font-family: 'Roboto', sans-serif;
 }
-#wrapper{
-    padding: 0;
-}
 #page{
     background: #ffffff;
     margin-top: 45px;
@@ -342,7 +339,7 @@ img.alignright {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
 }
 */
-
+/*
 = Media Queries
 ------------------------------------------*/
 @media only screen and (min-width: 768px) {
