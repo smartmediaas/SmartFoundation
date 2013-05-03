@@ -106,8 +106,8 @@ h1,h2,h3,h4,h5,h6{
 .main-navigation ul li:hover > ul {
     display: block;
 }
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
+.main-navigation li.current_page_item > a,
+.main-navigation li.current-menu-item > a {
 }
 
 
