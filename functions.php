@@ -33,9 +33,9 @@ function smart_foundation_setup(){
     // custom header image.
     $args = array(
         'flex-width'    => true,
-        'width'         => 980,
+        'width'         => 1000,
         'flex-height'    => true,
-        'height'        => 280,
+        'height'        => 350,
         'default-image' => get_template_directory_uri() . '/images/standard-banner.jpg',
         );
     add_theme_support( 'custom-header', $args );
@@ -154,15 +154,16 @@ function smart_widgets_init(){
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
     ) );
+
+    register_sidebar( array(
+        'name' => __( 'Hovedside', 'smart_foundation' ),
+        'id' => 'sidebar-2',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
 */
-//    register_sidebar( array(
-//        'name' => __( 'Hovedside', 'smart_foundation' ),
-//        'id' => 'sidebar-2',
-//        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-//        'after_widget' => '</aside>',
-//        'before_title' => '<h4 class="widget-title">',
-//        'after_title' => '</h4>',
-//    ) );
     
     register_sidebar( array(
         'name' => __( 'Bunnområde 1', 'smart_foundation' ),
