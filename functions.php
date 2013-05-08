@@ -201,12 +201,15 @@ function smart_enqueue_method() {
 	// styles
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
 	wp_enqueue_style( 'foundationstyle', get_template_directory_uri() . '/css/foundation.css' );
+	wp_enqueue_style( 'foundicons', get_template_directory_uri() . '/css/general_foundicons.css' );
+	wp_enqueue_style( 'foundiconsie', get_template_directory_uri() . '/css/general_foundicons_ie7.css' );
 	wp_enqueue_style( 'responsive-nav', get_template_directory_uri() . '/css/responsive-nav.css' );
 	wp_enqueue_style( 'stylesheet', get_bloginfo( 'stylesheet_url' ), array( 'normalize', 'foundationstyle') );
 	
 	// scripts
-	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-latest.min.js');
+	//wp_deregister_script('jquery');
+	wp_enqueue_script('jquery');
+	//wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-latest.min.js');
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/vendor/custom.modernizr.js');
 	wp_enqueue_script('responsive-nav-js', get_template_directory_uri() . '/js/responsive-nav.min.js', array('jquery'));
 	wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), false, true);
