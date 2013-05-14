@@ -59,7 +59,6 @@ h1,h2,h3,h4,h5,h6{
     clear: both;
 	display: block;
 	float: left;
-	width: 100%;
 }
 .main-navigation ul {
 	list-style: none;

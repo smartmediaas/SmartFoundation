@@ -86,8 +86,8 @@ if ( $paged >= 2 || $page >= 2 )
             </div>
             
             
-            <nav class="main-navigation large-12 hide-for-small" role="navigation">
-                <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu', 'container_class' => 'row')); ?>
+            <nav class="main-navigation row hide-for-small" role="navigation">
+                <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu')); ?>
             </nav>
             
             <div id="main" class="row">
