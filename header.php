@@ -36,7 +36,7 @@ if ( $paged >= 2 || $page >= 2 )
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie8-grid.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie8-grid.css" />
     <![endif]-->
     <?php wp_head(); ?>
 </head>
@@ -78,16 +78,16 @@ if ( $paged >= 2 || $page >= 2 )
                             </h1>
                             <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>
                         </div>
-                    </div>
-                </div>               
+                    </div> 
+                </div>            
             </header>
+           
             <div id="site-banner" class="row">
                 <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php _e('Banner', 'smart_foundation'); ?>" />  
-            </div>
-            
+            </div>          
             
             <nav class="main-navigation row hide-for-small" role="navigation">
-                <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu')); ?>
+                <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu', 'menu_class' => 'menu large-12 columns')); ?>
             </nav>
             
             <div id="main" class="row">

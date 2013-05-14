@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="large-12 columns">
+	<div id="primary" class="large-8 columns">
 	
 		<?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?> 
@@ -18,5 +18,5 @@
 		
 	</div><!-- end #primary -->
 
-<?php // get_sidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
