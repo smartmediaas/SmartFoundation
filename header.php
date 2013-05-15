@@ -78,17 +78,18 @@ if ( $paged >= 2 || $page >= 2 )
                             </h1>
                             <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>
                         </div>
-                    </div> 
+                    </div>
                 </div>            
             </header>
-           
+            
             <div id="site-banner" class="row">
                 <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php _e('Banner', 'smart_foundation'); ?>" />  
             </div>          
             
             <nav class="main-navigation row hide-for-small" role="navigation">
                 <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu', 'menu_class' => 'menu large-12 columns')); ?>
+                <hr />
             </nav>
             
             <div id="main" class="row">
-                <hr />
+                    
