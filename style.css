@@ -193,28 +193,10 @@ img.alignright {
 }
 
 /*
-= Panels
+= Comments
 ------------------------------------------*/
-#panel-left,
-#panel-right{
-    background: #3f3f3f;
-    color: #e0e0e0;
-}
-#panel-left a,
-#panel-right a{
-    text-shadow: -1px -1px #000;
-}
-#panel-left .widget .widget-title,
-#panel-right .widget .widget-title{
-    color: #fff;
-}
-#panel-left .widget ul,
-#panel-right .widget ul{
-    list-style: none;
-}
-.ui-panel-position-right.ui-panel-display-reveal,
-.ui-panel-position-right.ui-panel-open{
-    right: -17em;
+.commentlist{
+	list-style: none;
 }
 
 /*
