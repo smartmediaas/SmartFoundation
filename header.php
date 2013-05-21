@@ -52,12 +52,7 @@ if ( $paged >= 2 || $page >= 2 )
             <?php endif; ?>
             <div id="nav-bar-title">
                 <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
-            </div>
-            <?php/* if(is_active_sidebar('panel-right')): ?>
-            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                <div id="right-panel-btn" class="panel-btn"><a href="#panel-right" class="right-btn"><span><?php //_e('Menu', 'smart_foundation' ); ?></span></a></div>
-            <?php endif; */?>
-            
+            </div>            
         </div>
     </div>
 
@@ -88,7 +83,6 @@ if ( $paged >= 2 || $page >= 2 )
             
             <nav class="main-navigation row hide-for-small" role="navigation">
                 <?php wp_nav_menu( array('theme_location' => 'main-menu', 'menu' => 'Main Menu', 'menu_class' => 'menu large-12 columns')); ?>
-                <hr />
             </nav>
             
             <div id="main" class="row">

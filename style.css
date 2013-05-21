@@ -3,7 +3,7 @@ Theme Name: Smart Foundation Panels 4
 Description: Smart Foundation 4 with panels from jQuery Mobile
 Author: Smart Media AS
 Author URI: http://smartmedia.no/
-Version: v1.1.3
+Version: v1.1
 */
 
 /*
@@ -22,6 +22,7 @@ font-family: 'Roboto', sans-serif;
 body{
     color: #5a5a5a;
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4em;
 }
 #page{
     background: #ffffff;
@@ -79,7 +80,7 @@ h1,h2,h3,h4,h5,h6{
 	display: none;
 	float: left;
 	position: absolute;
-    	top: 2.5em;
+    	top: 2em;
     	left: 0;
 	z-index: 99999;
 }
@@ -113,62 +114,95 @@ h1,h2,h3,h4,h5,h6{
     color: #666666;
 	font-weight: 400;
 }
-.entry-content ul,
-.entrycontent ol{
-    paddding-left: 40px;
-}
 .entry-meta{
 	font-size: 0.9em;
 	font-style: italic;
 	color: #888888;
 	margin-bottom: 17px;
 }
-/* Alignment */
-.alignleft {
-	display: inline;
-	float: left;
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
 }
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
 .alignright {
-	display: inline;
-	float: right;
+    float:right;
+    margin: 5px 0 20px 20px;
 }
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin: 5px auto 5px auto;
 }
-/*
-Resize images to fit the main content area.
-- Applies only to images uploaded via WordPress by targeting size-* classes.
-- Other images will be left alone. Use "size-auto" class to apply to other images.
-*/
-img.size-auto,
-img.size-full,
-img.size-large,
-img.size-medium,
-.attachment img,
-.widget-area img,
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .wp-caption {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
 }
-img.alignleft {
-	margin-right: 1em;
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
 }
-img.alignright {
-	margin-left: 1em;
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
 }
-.wp-caption {
-	padding: .5em;
-	text-align: center;
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
 }
+
 .wp-caption img {
-	margin: .25em;
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
 }
-.wp-caption .wp-caption-text {
-	margin: .5em;
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
 }
+
 
 
 /*
@@ -195,9 +229,7 @@ img.alignright {
 /*
 = Comments
 ------------------------------------------*/
-.commentlist{
-	list-style: none;
-}
+
 
 /*
 = Navigation bar
@@ -205,7 +237,6 @@ img.alignright {
 .nav-bar{
     overflow: hidden;
     height: 45px;
-    line-height: 45px;
     position: fixed;
     top: 0;
     background: #111;
@@ -235,11 +266,15 @@ img.alignright {
     width: 40px;
 }
 .nav-bar #nav-bar-title{
-    top: 8px;
-    left: 16px;
+    top: 0.7em;
+    left: 1em;
+}
+.nav-bar #nav-bar-title h3{
+	margin: 0;
 }
 .nav-bar #nav-bar-title a{
 	color: #fff;
+	text-decoration: none;
 }
 .nav-bar #right-panel-btn{
     top: 5px;
@@ -255,7 +290,7 @@ img.alignright {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
 }
 #nav li{
-	padding: 0.5em 1em;
+	padding: 0.8em;
 	background: #222;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #3c3c3c;
@@ -265,13 +300,14 @@ img.alignright {
 }
 #nav li a{
 	color: #fff;
-	font-weight: bold;
+	text-decoration: none;
+	display: block;
 }
 #nav ul ul li > a:before{
-    content: " - ";
+    content: " -> ";
 }
 #nav ul ul ul li > a:before{
-    content: " - - ";
+    content: " - -> ";
 }
 #nav ul ul li{
     border: none;
@@ -282,12 +318,7 @@ img.alignright {
 = Media Queries
 ------------------------------------------*/
 @media only screen and (min-width: 768px) {
-    #page{
-        margin-top: 0;
-    }
-    #site-header{
-		border: none;
+	#page{
+		margin-top: 0;
 	}
-	.clearing-main-right,
-	.clearing-main-left{display:block}
 }
