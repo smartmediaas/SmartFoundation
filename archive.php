@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section id="primary" class="large-8 columns" role="main">
+	<div id="primary" class="large-8 columns" role="main">
 		<header>
 		    <h2 id="archive-title"><?php post_type_archive_title(); ?></h2>
 		</header>
@@ -17,7 +17,7 @@
             <?php get_template_part('content', 'notfound'); ?>
         
         <?php endif; ?>
-	</section><!-- end #primary -->
+	</div><!-- end #primary -->
 	
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -132,7 +132,7 @@ function smart_widgets_init(){
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
     ) );
-/*   
+   
     register_sidebar( array(
         'name' => __( 'Venstre panel', 'smart_foundation' ),
         'id' => 'panel-left',
@@ -142,7 +142,7 @@ function smart_widgets_init(){
         'after_title' => '</h4>',
     ) );
 
-
+/*
     register_sidebar( array(
         'name' => __( 'Høyre panel', 'smart_foundation' ),
         'id' => 'panel-right',

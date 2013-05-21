@@ -46,13 +46,15 @@ if ( $paged >= 2 || $page >= 2 )
     <!-- Starting the Top-Bar -->
     <div class="nav-bar show-for-small">
         <div class="row nav-inner">
-             
-            <?php if(has_nav_menu( 'mobile-menu' )): ?>
-                <div id="left-panel-btn" class="panel-btn"><a href="#nav" id="toggle" class="left-btn"><span></span></a></div>
+            <?php if(is_active_sidebar( 'panel-left' )): ?>
+                <div class="panel-btn left-btn"><a href="#panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
             <div id="nav-bar-title">
                 <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
-            </div>            
+            </div>
+            <?php if(has_nav_menu( 'mobile-menu' )): ?>
+                <div class="panel-btn right-btn"><a href="#nav" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
+            <?php endif; ?>      
         </div>
     </div>
 

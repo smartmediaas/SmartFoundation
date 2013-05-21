@@ -4,7 +4,7 @@ Template Name: Fullbredde
 */
 get_header(); ?>
 
-	<section id="primary" class="large-12 columns" role="main">
+	<div id="primary" class="large-12 columns" role="main">
 		
 		<?php if( have_posts() ) : ?>
             <?php while( have_posts() ) : the_post(); ?> 
@@ -20,6 +20,6 @@ get_header(); ?>
         
         <?php endif; ?>
 		
-	</section><!-- end #primary -->
+	</div><!-- end #primary -->
 
 <?php get_footer(); ?>

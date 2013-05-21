@@ -21,6 +21,12 @@
         
         </div><!-- end #inner-page -->
     </div><!-- end #page -->
+
+     <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
+        <div id="#panel" class="left-panel">
+            <?php dynamic_sidebar( 'panel-left' ); ?>
+        </div>
+    <?php endif; ?>
     
     <div id="site-generator" class="row">
         <div class="large-12 columns">
@@ -34,7 +40,7 @@
 <script>
     jQuery(document).ready(function($){
         $(document).foundation();
-        var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
+        var navigation = responsiveNav("#nav", {customToggle: "#menu-toggle"});
     });
 </script>
 

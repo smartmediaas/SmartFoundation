@@ -32,7 +32,15 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Open Sans', sans-serif;
 }
-
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 /*
 = Structure
@@ -44,9 +52,6 @@ h1,h2,h3,h4,h5,h6{
 ------------------------------------------*/
 #site-header{
     border-bottom: 1px solid #dddddd;
-}
-#site-header a{
-    text-decoration: none;
 }
 #site-header #sidebarButton { 
 	float: left;
@@ -115,59 +120,59 @@ h1,h2,h3,h4,h5,h6{
 /*
 = Content
 ------------------------------------------*/
+.subheader{
+    margin-bottom: 0.5em;
+}
 .entry-meta{
 	font-size: 0.9em;
 	font-style: italic;
 	color: #888888;
 	margin-bottom: 17px;
 }
-/* =WordPress Core
+blockquote{
+    border-left: 3px solid #ccc;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+/* =WordPress Core Content Styles
 -------------------------------------------------------------- */
 .alignnone {
     margin: 5px 20px 20px 0;
 }
-
 .aligncenter,
 div.aligncenter {
     display: block;
     margin: 5px auto 5px auto;
 }
-
 .alignright {
     float:right;
     margin: 5px 0 20px 20px;
 }
-
 .alignleft {
     float: left;
     margin: 5px 20px 20px 0;
 }
-
 .aligncenter {
     display: block;
     margin: 5px auto 5px auto;
 }
-
 a img.alignright {
     float: right;
     margin: 5px 0 20px 20px;
 }
-
 a img.alignnone {
     margin: 5px 20px 20px 0;
 }
-
 a img.alignleft {
     float: left;
     margin: 5px 20px 20px 0;
 }
-
 a img.aligncenter {
     display: block;
     margin-left: auto;
     margin-right: auto
 }
-
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
@@ -175,19 +180,15 @@ a img.aligncenter {
     padding: 5px 3px 10px;
     text-align: center;
 }
-
 .wp-caption.alignnone {
     margin: 5px 20px 20px 0;
 }
-
 .wp-caption.alignleft {
     margin: 5px 20px 20px 0;
 }
-
 .wp-caption.alignright {
     margin: 5px 0 20px 20px;
 }
-
 .wp-caption img {
     border: 0 none;
     height: auto;
@@ -196,7 +197,6 @@ a img.aligncenter {
     padding: 0;
     width: auto;
 }
-
 .wp-caption p.wp-caption-text {
     font-size: 11px;
     line-height: 17px;
@@ -204,18 +204,18 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-
-
 /*
 = Widgets / Sidebar
 ------------------------------------------*/
-
+#secondary{
+    margin-top: 1.2em;
+}
 
 /*
 = Footer
 ------------------------------------------*/
 #site-generator{
-    padding-bottom: 40px;
+    padding-bottom: 4em;
     text-align: center;
 }
 
@@ -243,45 +243,49 @@ a img.aligncenter {
     display: inline-block;
     position: absolute;
 }
-.nav-bar .panel-btn a{
-    width: 34px;
-    height: 34px;
-    padding: 0;
-    color: #FFF;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
-}
-.nav-bar #left-panel-btn{
-    top: 5px;
-    right: 0;
-    width: 40px;
-}
 .nav-bar #nav-bar-title{
-    top: 0.7em;
-    left: 1em;
+    top: 0;
+    left: 45px;
+    padding-left: 1em;
 }
 .nav-bar #nav-bar-title h3{
-	margin: 0;
+    margin: 0;
+    padding-top: 0.6em;
 }
 .nav-bar #nav-bar-title a{
-	color: #fff;
-	text-decoration: none;
+    color: #fff;;
+    text-decoration: none;
 }
-.nav-bar #right-panel-btn{
-    top: 5px;
-    right: 0;
-    width: 40px;
-}
-.nav-bar .panel-btn a span{
+.nav-bar .panel-btn{
+    width: 45px;
+    height: 45px;
     display: block;
-    width: 16px;
-    height: 0;
-    margin: auto;
-    -webkit-box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
-    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
 }
+.nav-bar .panel-btn a{
+    font-size: 1.6em;
+    padding: 0.4em 0.4em 0;
+    line-height: 2em;
+    color: #fff;
+}
+.nav-bar .panel-btn a:hover{
+    text-decoration: none;
+    color: #ccc;
+}
+.nav-bar .right-btn{
+    top: 0;
+    right: 0;
+    border-left: 1px solid #3c3c3c;
+}
+.nav-bar .left-btn{
+    top: 0;
+    left: 0;
+    border-right: 1px solid #3c3c3c;
+}
+
+
+/*
+= Mobile menu
+------------------------------------------*/
 #nav li{
 	padding: 0.8em;
 	background: #222;
@@ -298,21 +302,44 @@ a img.aligncenter {
 	display: block;
 }
 #nav ul ul li > a:before{
-    content: " -> ";
+    content: " - ";
 }
 #nav ul ul ul li > a:before{
-    content: " - -> ";
+    content: " - - ";
 }
 #nav ul ul li{
     border: none;
     padding-left: 0;
     padding-bottom: 0;
 }
+
+/*
+= Panel
+------------------------------------------*/
+.left-panel{
+  width: 80%; 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /*transition: width 0.3s ease;*/
+  z-index: 9999;
+  background: yellow;
+  display: none;
+}
+#panel:target{
+    display: block;
+}
+
 /*
 = Media Queries
 ------------------------------------------*/
 @media only screen and (min-width: 768px) {
-	#page{
+	body{
+        padding-top: 4em;
+    }
+    #page{
 		margin-top: 0;
 	}
 }
