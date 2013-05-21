@@ -23,7 +23,10 @@
     </div><!-- end #page -->
 
      <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
-        <div id="#panel" class="left-panel">
+        <div id="panel" class="left-panel">
+            <aside class="widget">
+                <a href="#">steng</a>
+            </aside>
             <?php dynamic_sidebar( 'panel-left' ); ?>
         </div>
     <?php endif; ?>

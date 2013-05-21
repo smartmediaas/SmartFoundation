@@ -317,19 +317,23 @@ a img.aligncenter {
 = Panel
 ------------------------------------------*/
 .left-panel{
-  width: 80%; 
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  /*transition: width 0.3s ease;*/
-  z-index: 9999;
-  background: yellow;
-  display: none;
+    width: 0; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: width 0.3s ease;
+    background: yellow;
+    -webkit-box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+.closing-panel{
+
 }
 #panel:target{
-    display: block;
+    width: 90%;
 }
 
 /*
