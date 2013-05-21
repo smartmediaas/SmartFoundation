@@ -9,10 +9,10 @@ Version: v1.1
 /*
 = Fonts
 ------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700|Roboto:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Gentium+Book+Basic:400,400italic,700,700italic);
 /*
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Gentium Book Basic', serif;
 */
 
 
@@ -21,7 +21,7 @@ font-family: 'Roboto', sans-serif;
 ------------------------------------------*/
 body{
     color: #5a5a5a;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gentium Book Basic', serif;
     line-height: 1.4em;
 }
 #page{
@@ -30,8 +30,9 @@ body{
     margin-bottom: 14px;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
+
 
 /*
 = Structure
@@ -43,6 +44,9 @@ h1,h2,h3,h4,h5,h6{
 ------------------------------------------*/
 #site-header{
     border-bottom: 1px solid #dddddd;
+}
+#site-header a{
+    text-decoration: none;
 }
 #site-header #sidebarButton { 
 	float: left;
@@ -69,8 +73,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .main-navigation a {
 	display: block;
+    font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
-	padding: 0.5em 1em;
+	padding: 0.5em 0 0.5em 1em;
 }
 .main-navigation ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -110,10 +115,6 @@ h1,h2,h3,h4,h5,h6{
 /*
 = Content
 ------------------------------------------*/
-.subheader{
-    color: #666666;
-	font-weight: 400;
-}
 .entry-meta{
 	font-size: 0.9em;
 	font-style: italic;
@@ -208,19 +209,11 @@ a img.aligncenter {
 /*
 = Widgets / Sidebar
 ------------------------------------------*/
-.widget-title{
-    font-weight: 400;
-}
-#secondary .widget ul{
-    list-style: none;
-}
+
 
 /*
 = Footer
 ------------------------------------------*/
-#site-footer ul{
-    list-style: none;
-}
 #site-generator{
     padding-bottom: 40px;
     text-align: center;
@@ -300,6 +293,7 @@ a img.aligncenter {
 }
 #nav li a{
 	color: #fff;
+    font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	display: block;
 }

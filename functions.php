@@ -23,10 +23,7 @@ function smart_foundation_setup(){
 	// custom background and default background color.
 	$defaults = array(
         'default-color'          => 'cccccc',
-        'default-image'          => '',
         'wp-head-callback'       => '_custom_background_cb',
-        'admin-head-callback'    => '',
-        'admin-preview-callback' => ''
     );
     add_theme_support( 'custom-background', $defaults );
     

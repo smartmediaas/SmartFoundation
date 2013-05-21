@@ -29,18 +29,6 @@
     Design av <a href="http://www.wow-medialab.com" title="Trykk her for å gå til nettsiden" target="_blank">WOW medialab</a> -->
         </div>
     </div>
-    
-    <?php/* if(is_active_sidebar('panel-left')): ?>
-    <div id="panel-left">		
-        <?php dynamic_sidebar('panel-left'); ?>
-    </div>
-    <?php endif; ?>
-    
-    <?php if(is_active_sidebar('panel-right')): ?>
-    <div id="panel-right">			
-        <?php dynamic_sidebar('panel-right'); ?>
-    </div>
-    <?php endif;*/ ?>
 
 <?php wp_footer(); ?>
 <script>
