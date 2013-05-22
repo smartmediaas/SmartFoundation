@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart Foundation Panels 4 vv1.1.3\n"
+"Project-Id-Version: Smart Foundation Panels 4 vv1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-05-03 08:25:22+0000\n"
+"PO-Revision-Date: 2013-05-22 20:34:09+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -146,26 +146,6 @@ msgstr "Kommenter"
 msgid "Submit Comment"
 msgstr "Send kommentar"
 
-#: functions.php:131
-#@ smart_foundation
-msgid "Sidemarg"
-msgstr "Sidemarg"
-
-#: functions.php:168
-#@ smart_foundation
-msgid "Bunnområde 1"
-msgstr "Bunnområde 1"
-
-#: functions.php:177
-#@ smart_foundation
-msgid "Bunnområde 2"
-msgstr "Bunnområde 2"
-
-#: functions.php:186
-#@ smart_foundation
-msgid "Bunnområde 3"
-msgstr "Bunnområde 3"
-
 #: header.php:32
 #, php-format
 #@ toolbox
@@ -197,8 +177,97 @@ msgstr "Oops! Denne siden finnes ikke."
 msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
 msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
 
-#: header.php:85
+#: header.php:83
 #@ smart_foundation
 msgid "Banner"
 msgstr "Banner"
+
+#: attachment.php:14
+#, php-format
+#@ _s
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: attachment.php:25
+#: attachment.php:103
+#@ _s
+msgid "Edit"
+msgstr ""
+
+#: attachment.php:29
+#@ _s
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: attachment.php:30
+#@ _s
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: attachment.php:86
+#@ _s
+msgid "Pages:"
+msgstr ""
+
+#: attachment.php:95
+#, php-format
+#@ _s
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: attachment.php:97
+#, php-format
+#@ _s
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: attachment.php:99
+#@ _s
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+
+#: attachment.php:101
+#@ _s
+msgid "Both comments and trackbacks are currently closed."
+msgstr ""
+
+#: footer.php:29
+#@ smart_foundation
+msgid "Close panel"
+msgstr "Lukk panel"
+
+#: functions.php:19
+#@ smart_foundation
+msgid "Main Menu"
+msgstr "Hovedmeny"
+
+#: functions.php:20
+#@ smart_foundation
+msgid "Mobile Menu"
+msgstr "Mobilmeny"
+
+#: functions.php:128
+#@ smart_foundation
+msgid "Sidebar"
+msgstr "Widgetområde"
+
+#: functions.php:137
+#@ smart_foundation
+msgid "Left Panel"
+msgstr "Mobilpanel"
+
+#: functions.php:156
+#@ smart_foundation
+msgid "Footer 1"
+msgstr "Bunnområde 1"
+
+#: functions.php:165
+#@ smart_foundation
+msgid "Footer 2"
+msgstr "Bunnområde 2"
+
+#: functions.php:174
+#@ smart_foundation
+msgid "Footer 3"
+msgstr "Bunnområde 3"
 

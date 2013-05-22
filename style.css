@@ -320,9 +320,12 @@ a img.aligncenter {
 = Panel
 ------------------------------------------*/
 .left-panel{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
     width: 0; 
     overflow: hidden;
     position: fixed;
+    padding-top: 1em;
     top: 0;
     left: 0;
     height: 100%;
@@ -331,6 +334,10 @@ a img.aligncenter {
     -webkit-box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
     z-index: 9999;
+    text-shadow: -1px -1px #222;
+}
+.left-panel a{
+    color: #f1f1f1;
 }
 .closing-panel{
     width: 100%; 
@@ -356,6 +363,17 @@ a img.aligncenter {
 #panel:target + .closing-panel{
     display: block;
     opacity: 0.6;
+}
+#close-panel-widget{
+    background: #494949;
+}
+#close-panel-widget a{
+    display: block;
+    padding: 0.5em 1em;
+}
+#close-panel-widget i{
+    float: right;
+    line-height: 1.6em;
 }
 
 /*

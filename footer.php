@@ -24,10 +24,12 @@
 
      <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
         <div id="panel" class="left-panel">
-            <aside class="widget">
-                <a href="#">steng</a>
-            </aside>
-            <?php dynamic_sidebar( 'panel-left' ); ?>
+            <div id="panel-inner" class="large-12 columns">
+                <aside id="close-panel-widget" class="widget">
+                    <a href="#"><?php _e('Close panel', 'smart_foundation'); ?><i  class="foundicon-remove"></i></a>
+                </aside>
+                <?php dynamic_sidebar( 'panel-left' ); ?>
+            </div>
         </div>
         <div class="closing-panel"><a href="#"></a></div>
     <?php endif; ?>

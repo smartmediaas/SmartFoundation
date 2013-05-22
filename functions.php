@@ -16,8 +16,8 @@ function smart_foundation_setup(){
 	// add custom menus
 	add_theme_support('menus');
 	register_nav_menus( array(
-		'main-menu' => 'Hovedmeny', // registers the menu in the WordPress admin menu editor
-		'mobile-menu' => 'Mobilmeny'
+		'main-menu' => __('Main Menu', 'smart_foundation'), // registers the menu in the WordPress admin menu editor
+		'mobile-menu' => __('Mobile Menu', 'smart_foundation')
 	) );
 
 	// custom background and default background color.
@@ -125,7 +125,7 @@ function smart_img($imgName, $imgParam=''){
 function smart_widgets_init(){
     	
     register_sidebar( array(
-        'name' => __( 'Sidemarg', 'smart_foundation' ),
+        'name' => __( 'Sidebar', 'smart_foundation' ),
         'id' => 'sidebar-1',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '<hr /></aside>',
@@ -134,26 +134,16 @@ function smart_widgets_init(){
     ) );
    
     register_sidebar( array(
-        'name' => __( 'Venstre panel', 'smart_foundation' ),
+        'name' => __( 'Left Panel', 'smart_foundation' ),
         'id' => 'panel-left',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
     ) );
-
 /*
     register_sidebar( array(
-        'name' => __( 'Høyre panel', 'smart_foundation' ),
-        'id' => 'panel-right',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h4 class="widget-title">',
-        'after_title' => '</h4>',
-    ) );
-
-    register_sidebar( array(
-        'name' => __( 'Hovedside', 'smart_foundation' ),
+        'name' => __( 'Front Page', 'smart_foundation' ),
         'id' => 'sidebar-2',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -163,7 +153,7 @@ function smart_widgets_init(){
 */
     
     register_sidebar( array(
-        'name' => __( 'Bunnområde 1', 'smart_foundation' ),
+        'name' => __( 'Footer 1', 'smart_foundation' ),
         'id' => 'footer-1',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -172,7 +162,7 @@ function smart_widgets_init(){
     ) );
 	
 	register_sidebar( array(
-        'name' => __( 'Bunnområde 2', 'smart_foundation' ),
+        'name' => __( 'Footer 2', 'smart_foundation' ),
         'id' => 'footer-2',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
@@ -181,7 +171,7 @@ function smart_widgets_init(){
     ) );
 	
 	register_sidebar( array(
-        'name' => __( 'Bunnområde 3', 'smart_foundation' ),
+        'name' => __( 'Footer 3', 'smart_foundation' ),
         'id' => 'footer-3',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
