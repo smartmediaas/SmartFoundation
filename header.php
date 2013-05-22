@@ -49,7 +49,7 @@ if ( $paged >= 2 || $page >= 2 )
             <?php if(is_active_sidebar( 'panel-left' )): ?>
                 <div class="panel-btn left-btn"><a href="#panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
-            <div id="nav-bar-title">
+            <div id="nav-bar-title" <?php if(is_active_sidebar('panel-left')) echo 'class="has-panel"'; ?>>
                 <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
             </div>
             <?php if(has_nav_menu( 'mobile-menu' )): ?>

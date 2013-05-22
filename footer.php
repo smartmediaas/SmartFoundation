@@ -29,6 +29,7 @@
             </aside>
             <?php dynamic_sidebar( 'panel-left' ); ?>
         </div>
+        <div class="closing-panel"><a href="#"></a></div>
     <?php endif; ?>
     
     <div id="site-generator" class="row">

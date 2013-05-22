@@ -1,9 +1,9 @@
 /* 
 Theme Name: Smart Foundation Panels 4
-Description: Smart Foundation 4 with panels from jQuery Mobile
+Description: Smart Foundation 4 with CSS3 panels
 Author: Smart Media AS
 Author URI: http://smartmedia.no/
-Version: v1.1
+Version: v1.2
 */
 
 /*
@@ -245,8 +245,11 @@ a img.aligncenter {
 }
 .nav-bar #nav-bar-title{
     top: 0;
-    left: 45px;
+    left: 0;
     padding-left: 1em;
+}
+.nav-bar #nav-bar-title.has-panel{
+    left: 45px;
 }
 .nav-bar #nav-bar-title h3{
     margin: 0;
@@ -324,16 +327,35 @@ a img.aligncenter {
     left: 0;
     height: 100%;
     transition: width 0.3s ease;
-    background: yellow;
+    background: #5a5a5a;
     -webkit-box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
-    z-index: 999;
+    z-index: 9999;
 }
 .closing-panel{
-
+    width: 100%; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #5a5a5a;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+.closing-panel a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 #panel:target{
     width: 90%;
+}
+#panel:target + .closing-panel{
+    display: block;
+    opacity: 0.6;
 }
 
 /*
