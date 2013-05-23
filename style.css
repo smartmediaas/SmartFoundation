@@ -116,7 +116,6 @@ a:hover{
 .main-navigation li.current-menu-item > a {
 }
 
-
 /*
 = Content
 ------------------------------------------*/
@@ -128,80 +127,6 @@ a:hover{
 	font-style: italic;
 	color: #888888;
 	margin-bottom: 17px;
-}
-blockquote{
-    border-left: 3px solid #ccc;
-    margin-left: 1em;
-    padding-left: 1em;
-}
-
-/* =WordPress Core Content Styles
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
 }
 
 /*
@@ -223,68 +148,47 @@ a img.aligncenter {
 = Comments
 ------------------------------------------*/
 
-
 /*
 = Navigation bar
 ------------------------------------------*/
-.nav-bar{
+#navigation-bar{
     overflow: hidden;
-    height: 45px;
     position: fixed;
     top: 0;
     background: #111;
     width: 100%;
     z-index: 999;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
 }
-.nav-bar .nav-inner{
-    position: relative;
+#navigation-bar .bar-item{
+
 }
-.nav-bar .nav-inner > div{
-    display: inline-block;
-    position: absolute;
+#navigation-bar #panel-button{
+    background: red;
 }
-.nav-bar #nav-bar-title{
-    top: 0;
-    left: 0;
-    padding-left: 1em;
+#navigation-bar #bar-title{
+    background: green;
 }
-.nav-bar #nav-bar-title.has-panel{
-    left: 45px;
+#navigation-bar #menu-button{
+    background: yellow;
 }
-.nav-bar #nav-bar-title h3{
-    margin: 0;
-    padding-top: 0.6em;
-}
-.nav-bar #nav-bar-title a{
-    color: #fff;;
-    text-decoration: none;
-}
-.nav-bar .panel-btn{
-    width: 45px;
-    height: 45px;
+#navigation-bar .bar-item a{
+    color: #fff;
+    padding: 0.5em 0;
     display: block;
 }
-.nav-bar .panel-btn a{
-    font-size: 1.6em;
-    padding: 0.4em 0.4em 0;
-    line-height: 2em;
-    color: #fff;
-}
-.nav-bar .panel-btn a:hover{
-    text-decoration: none;
-    color: #ccc;
-}
-.nav-bar .right-btn{
-    top: 0;
-    right: 0;
-    border-left: 1px solid #3c3c3c;
-}
-.nav-bar .left-btn{
-    top: 0;
-    left: 0;
-    border-right: 1px solid #3c3c3c;
+#navigation-bar .bar-item i{
+    margin: 0 auto;
+    display: block;
 }
 
+/* mobile navigation */
+.fixed-mobile-menu{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
 
 /*
 = Panel
@@ -301,17 +205,14 @@ a img.aligncenter {
     height: 100%;
     transition: width 0.3s ease;
     background: #5a5a5a;
-    -webkit-box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
     z-index: 9999;
     text-shadow: -1px -1px #222;
 }
 .left-panel a{
     color: #f1f1f1;
 }
-.closing-panel{
+.close-panel{
     width: 100%; 
-    overflow: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -322,15 +223,17 @@ a img.aligncenter {
     transition: opacity 0.3s ease;
     display: none;
 }
-.closing-panel a{
+.close-panel a{
     display: block;
     width: 100%;
     height: 100%;
 }
-#panel:target{
+#mobile-panel:target{
     width: 90%;
+    -webkit-box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
-#panel:target + .closing-panel{
+#mobile-panel:target + .close-panel{
     display: block;
     opacity: 0.6;
 }

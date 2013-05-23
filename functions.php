@@ -190,13 +190,12 @@ function smart_enqueue_method() {
 	wp_enqueue_style( 'foundationstyle', get_template_directory_uri() . '/css/foundation.css' );
 	wp_enqueue_style( 'foundicons', get_template_directory_uri() . '/css/general_foundicons.css' );
 	wp_enqueue_style( 'foundiconsie', get_template_directory_uri() . '/css/general_foundicons_ie7.css' );
-	wp_enqueue_style( 'responsive-nav', get_template_directory_uri() . '/css/responsive-nav.css' );
+	wp_enqueue_style( 'wpcorestyles', get_template_directory_uri() . '/css/wp-core-styles.css' );
 	wp_enqueue_style( 'stylesheet', get_bloginfo( 'stylesheet_url' ), array( 'normalize', 'foundationstyle') );
 	
 	// scripts
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/custom.modernizr.js');
-	wp_enqueue_script('responsive-nav-js', get_template_directory_uri() . '/js/responsive-nav.min.js', array('jquery'));
 	wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'smart_enqueue_method');

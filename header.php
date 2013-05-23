@@ -42,26 +42,23 @@ if ( $paged >= 2 || $page >= 2 )
 </head>
 
 <body <?php body_class(); ?>>
-        
-    <!-- Starting the Top-Bar -->
-    <div class="nav-bar show-for-small">
-        <div class="row nav-inner">
+       
+    <div id="navigation-bar" class="show-for-small row">
             <?php if(is_active_sidebar( 'panel-left' )): ?>
-                <div class="panel-btn left-btn"><a href="#panel"><i class="foundicon-tools"></i></a></div>
+                <div id="panel-button" class="bar-item bar-button small-2 columns"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
-            <div id="nav-bar-title" <?php if(is_active_sidebar('panel-left')) echo 'class="has-panel"'; ?>>
-                <h3><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+            <div id="bar-title" class="bar-item small-8 columns">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </div>
             <?php if(has_nav_menu( 'mobile-menu' )): ?>
-                <div class="panel-btn right-btn"><a href="#nav" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
-            <?php endif; ?>      
-        </div>
-    </div>
+                <div id="menu-button" class="bar-item bar-button small-2 columns"><a href="#" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
+            <?php endif; ?>
+            
+            <?php smart_clear(); ?>
+            
+            <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
+    </div><!-- #navigation-bar -->
 
-    <!-- End of Top-Bar -->
-    
-    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small')); ?>
-    
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
             <header id="site-header" class="row">
