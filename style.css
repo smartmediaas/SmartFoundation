@@ -287,36 +287,6 @@ a img.aligncenter {
 
 
 /*
-= Mobile menu
-------------------------------------------*/
-#nav li{
-	padding: 0.8em;
-	background: #222;
-	border-bottom: 1px solid #000;
-	border-top: 1px solid #3c3c3c;
-}
-#nav ul{
-	padding: 0;
-}
-#nav li a{
-	color: #fff;
-    font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
-	display: block;
-}
-#nav ul ul li > a:before{
-    content: " - ";
-}
-#nav ul ul ul li > a:before{
-    content: " - - ";
-}
-#nav ul ul li{
-    border: none;
-    padding-left: 0;
-    padding-bottom: 0;
-}
-
-/*
 = Panel
 ------------------------------------------*/
 .left-panel{
