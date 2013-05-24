@@ -42,8 +42,9 @@ if ( $paged >= 2 || $page >= 2 )
 </head>
 
 <body <?php body_class(); ?>>
-       
-    <div id="navigation-bar" class="show-for-small row">
+    
+    <div id="nav-bar-wrapper">
+        <div id="navigation-bar" class="row">            
             <?php if(is_active_sidebar( 'panel-left' )): ?>
                 <div id="panel-button" class="bar-item bar-button"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
@@ -52,10 +53,11 @@ if ( $paged >= 2 || $page >= 2 )
             </div>
             <?php if(has_nav_menu( 'mobile-menu' )): ?>
                 <div id="menu-button" class="bar-item bar-button"><a href="#mobile-navigation" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
-            <?php endif; ?>            
-    </div><!-- #navigation-bar -->
+            <?php endif; ?>
+        </div>
+    </div><!-- #nav-bar-wrapper -->
     
-    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
+    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
 
     <div class="close-menu"><a href="#"></a></div>
 
