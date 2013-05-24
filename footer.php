@@ -22,7 +22,7 @@
         </div><!-- end #inner-page -->
     </div><!-- end #page -->
 
-     <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
+    <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
         <div id="mobile-panel" class="left-panel">
             <div id="panel-inner" class="large-12 columns">
                 <aside id="close-panel-widget" class="widget">
@@ -46,10 +46,6 @@
 <script>
     jQuery(document).ready(function($){
         $(document).foundation();
-        $("#mobile-navigation").hide();
-        $("#menu-toggle").click(function(){
-            $("#mobile-navigation").animate({height: "toggle"}, 1000);
-        });
     });
 </script>
 

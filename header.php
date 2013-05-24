@@ -45,19 +45,20 @@ if ( $paged >= 2 || $page >= 2 )
        
     <div id="navigation-bar" class="show-for-small row">
             <?php if(is_active_sidebar( 'panel-left' )): ?>
-                <div id="panel-button" class="bar-item bar-button small-2 columns"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
+                <div id="panel-button" class="bar-item bar-button"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
-            <div id="bar-title" class="bar-item small-8 columns">
+            <div id="bar-title" class="bar-item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
             </div>
             <?php if(has_nav_menu( 'mobile-menu' )): ?>
-                <div id="menu-button" class="bar-item bar-button small-2 columns"><a href="#" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
-            <?php endif; ?>
-            
-            <?php smart_clear(); ?>
-            
-            <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
+                <div id="menu-button" class="bar-item bar-button"><a href="#mobile-navigation" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
+            <?php endif; ?>            
     </div><!-- #navigation-bar -->
+    
+    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'show-for-small fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
+
+    <div class="close-menu"><a href="#"></a></div>
+
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
