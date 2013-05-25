@@ -43,8 +43,8 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div id="nav-bar-wrapper">
-        <div id="navigation-bar" class="row">            
+    <div id="navigation-bar">
+        <div class="row">            
             <?php if(is_active_sidebar( 'panel-left' )): ?>
                 <div id="panel-button" class="bar-item bar-button"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
             <?php endif; ?>
@@ -57,7 +57,10 @@ if ( $paged >= 2 || $page >= 2 )
         </div>
     </div><!-- #nav-bar-wrapper -->
     
-    <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny', 'container_id' => 'nav', 'container_class' => 'fixed-mobile-menu', 'container_id' => 'mobile-navigation')); ?>
+    <div id="mobile-navigation" class="fixed-mobile-menu">
+        <a id="close-fill" href="#"></a>
+        <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny')); ?>
+    </div>
 
     <div class="close-menu"><a href="#"></a></div>
 

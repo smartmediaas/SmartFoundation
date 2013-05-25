@@ -1,7 +1,8 @@
 /*
 = Navigation bar
 ------------------------------------------*/
-#nav-bar-wrapper{
+
+#navigation-bar{
     background: #111;
     overflow: hidden;
     position: fixed;
@@ -9,10 +10,7 @@
     z-index: 999;
     font-family: 'Open Sans', sans-serif;
     height: 45px;
-    width: 100%;
-}
-#navigation-bar{
-    
+    width: 100%;    
 }
 #navigation-bar .bar-item{
     display: table-cell;
@@ -48,14 +46,18 @@
     max-height: 0;
     transition: max-height 1s ease;
     position: fixed;
-    top: 45px;
-    background: #5a5a5a;
+    top: 0;
     z-index: 9999;
 }
 #mobile-navigation:target{
     max-height: 2000px;
 }
-.fixed-mobile-menu > ul{
+#close-fill{
+    display: block;
+    height: 45px;
+    width: 100%;
+}
+.fixed-mobile-menu ul{
     margin: 0;
     padding: 0;
 }
