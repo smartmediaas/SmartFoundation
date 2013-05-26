@@ -24,6 +24,9 @@
     padding: 0.5em;
     display: block;
 }
+#navigation-bar .bar-item a:hover{
+    text-decoration: none;
+}
 #navigation-bar .bar-item i{
     margin: 0 auto;
     display: block;
