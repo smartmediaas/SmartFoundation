@@ -43,27 +43,21 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div id="navigation-bar">
-        <div class="row">            
-            <?php if(is_active_sidebar( 'panel-left' )): ?>
-                <div id="panel-button" class="bar-item bar-button"><a href="#mobile-panel"><i class="foundicon-tools"></i></a></div>
-            <?php endif; ?>
-            <div id="bar-title" class="bar-item">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-            </div>
-            <?php if(has_nav_menu( 'mobile-menu' )): ?>
-                <div id="menu-button" class="bar-item bar-button"><a href="#mobile-navigation" id="menu-toggle"><i class="foundicon-settings"></i></a></div>
-            <?php endif; ?>
-        </div>
-    </div><!-- #nav-bar-wrapper -->
-    
-    <div id="mobile-navigation" class="fixed-mobile-menu">
-        <a id="close-fill" href="#"></a>
-        <?php if(has_nav_menu( 'mobile-menu' )) wp_nav_menu( array('theme_location' => 'mobile-menu', 'menu' => 'Mobilmeny')); ?>
+    <div class="top-bar-container fixed contain-to-grid">
+        <nav class="top-bar">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                </li>          
+                <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <?php foundation_top_bar_l(); ?>
+
+                <?php foundation_top_bar_r(); ?>
+            </section>
+        </nav>
     </div>
-
-    <div class="close-menu"><a href="#"></a></div>
-
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
@@ -95,4 +89,3 @@ if ( $paged >= 2 || $page >= 2 )
             </nav>
             
             <div id="main" class="row">
-                    

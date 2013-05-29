@@ -21,18 +21,6 @@
         
         </div><!-- end #inner-page -->
     </div><!-- end #page -->
-
-    <?php if ( is_active_sidebar( 'panel-left' ) ) : ?>
-        <div id="mobile-panel" class="left-panel">
-            <div id="panel-inner" class="large-12 columns">
-                <aside id="close-panel-widget" class="widget">
-                    <a href="#"><?php _e('Close panel', 'smart_foundation'); ?><i  class="foundicon-remove"></i></a>
-                </aside>
-                <?php dynamic_sidebar( 'panel-left' ); ?>
-            </div>
-        </div>
-        <div class="close-panel"><a href="#"></a></div>
-    <?php endif; ?>
     
     <div id="site-generator" class="row">
         <div class="large-12 columns">
@@ -45,7 +33,10 @@
 <?php wp_footer(); ?>
 <script>
     jQuery(document).ready(function($){
-        $(document).foundation();
+            $(document).foundation('topbar', {
+                custom_back_text: true,
+                back_text: "<?php _e('Back', 'smart_foundation'); ?>"
+            });
     });
 </script>
 

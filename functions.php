@@ -17,7 +17,9 @@ function smart_foundation_setup(){
 	add_theme_support('menus');
 	register_nav_menus( array(
 		'main-menu' => __('Main Menu', 'smart_foundation'), // registers the menu in the WordPress admin menu editor
-		'mobile-menu' => __('Mobile Menu', 'smart_foundation')
+		'mobile-menu' => __('Mobile Menu', 'smart_foundation'),
+		'top-bar-l' => 'Left Top Bar', // registers foundation top bar menu
+    	'top-bar-r' => 'Right Top Bar' // registers foundation top bar menu
 	) );
 
 	// custom background and default background color.
@@ -52,6 +54,9 @@ function smart_foundation_setup(){
 }
 
 add_action( 'after_setup_theme', 'smart_foundation_setup' );
+
+// request foundation top bar walker
+require get_template_directory() . '/includes/foundation-walker.php';
 
 // clear function
 function smart_clear(){
@@ -191,13 +196,15 @@ function smart_enqueue_method() {
 	wp_enqueue_style( 'foundicons', get_template_directory_uri() . '/css/general_foundicons.css' );
 	wp_enqueue_style( 'foundiconsie', get_template_directory_uri() . '/css/general_foundicons_ie7.css' );
 	wp_enqueue_style( 'wpcorestyles', get_template_directory_uri() . '/css/wp-core-styles.css' );
-	wp_enqueue_style( 'navbarpanel', get_template_directory_uri() . '/css/navbarpanel.css' );
+	//wp_enqueue_style( 'navbarpanel', get_template_directory_uri() . '/css/navbarpanel.css' );
 	wp_enqueue_style( 'stylesheet', get_bloginfo( 'stylesheet_url' ), array( 'normalize', 'foundationstyle') );
 	
 	// scripts
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/custom.modernizr.js');
 	wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.min.js', array('jquery'), false, true);
+	wp_enqueue_script('f-placeholder', get_template_directory_uri() . '/js/foundation.placeholder.js', array('jquery', 'foundation'), false, true);
+	wp_enqueue_script('f-topbar', get_template_directory_uri() . '/js/foundation.topbar.js', array('jquery', 'foundation'), false, true);
 }
 add_action('wp_enqueue_scripts', 'smart_enqueue_method');
 
