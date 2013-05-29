@@ -2255,7 +2255,8 @@ form.custom {
     margin-bottom: 0; }
   .top-bar .title-area {
     position: relative;
-    margin:0; }
+    margin:0;
+    padding:0;}
   .top-bar .name {
     height: 45px;
     margin: 0;
