@@ -23,10 +23,10 @@ body{
     color: #5a5a5a;
     font-family: 'Gentium Book Basic', serif;
     line-height: 1.4em;
+    background: transparent;
 }
 #page{
     background: #ffffff;
-    margin-top: 45px;
     margin-bottom: 14px;
 }
 h1,h2,h3,h4,h5,h6{
@@ -147,6 +147,20 @@ a:hover{
 /*
 = Topbar
 ------------------------------------------*/
+.top-bar .title-area{
+	padding: 0;
+	margin: 0;
+}
+.top-bar-section ul{
+	padding: 0;
+}
+.top-bar-section ul.dropdown li > a,
+.top-bar-section ul li > a{
+	padding: 0 0 0 15px;
+}
+.contain-to-grid .top-bar{
+	margin-bottom: 0;
+}
 .toggle-nav{
 	-webkit-transition: all 500ms ease-in-out;
 	-moz-transition: all 500ms ease-in-out;
@@ -175,6 +189,20 @@ a:hover{
 	margin-right: 80px;
 	padding-left: 0;
 }
+
+/*
+= Mega Dropdown
+------------------------------------------*/
+#megadrop{
+	background: #252525;
+}
+#megadrop a{
+	color: #fff;
+}
+#megadrop ul{
+	list-style: none;
+	padding: 0;
+}
 /*
 = Media Queries
 ------------------------------------------*/
@@ -184,5 +212,15 @@ a:hover{
     }
     #page{
 		margin-top: 0;
+	}
+	.top-bar{
+		margin: 0;
+	}
+	.top-bar-section ul{
+		padding: 0;
+	}
+	.top-bar-section ul.dropdown li > a,
+	.top-bar-section ul li > a{
+		padding: 8px 15px;
 	}
 }

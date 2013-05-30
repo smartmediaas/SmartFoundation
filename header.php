@@ -43,7 +43,7 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div class="top-bar-container fixed contain-to-grid">
+    <div class="top-bar-container fixed contain-to-grid show-for-small">
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">
@@ -54,17 +54,15 @@ if ( $paged >= 2 || $page >= 2 )
                 </li>          
                 <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
             </ul>
-            <div class="top-bar-section">
+            <section class="top-bar-section">
                 <?php foundation_top_bar_r(); ?>
-            </div>
+            </section>
         </nav>
     </div>
 
     <?php if(is_active_sidebar('megadropdown')){ ?>
         <div class="row" id="megadrop" style="display: none;">
-            <div class="small-12 columns">
-                <?php dynamic_sidebar( 'megadropdown' ); ?>
-            </div>
+            <?php dynamic_sidebar( 'megadropdown' ); ?>
         </div><!-- #megadrop -->
     <?php } ?>
 
