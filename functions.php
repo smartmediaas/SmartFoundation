@@ -19,7 +19,6 @@ function smart_foundation_setup(){
 		'main-menu' => __('Main Menu', 'smart_foundation'), // registers the menu in the WordPress admin menu editor
 		'top-bar-r' => __('Mobile Menu', 'smart_foundation'),
 		//'top-bar-l' => 'Left Top Bar', // registers foundation top bar menu
-    	//'top-bar-r' => 'Right Top Bar' // registers foundation top bar menu
 	) );
 
 	// custom background and default background color.
