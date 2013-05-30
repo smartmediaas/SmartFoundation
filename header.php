@@ -47,74 +47,26 @@ if ( $paged >= 2 || $page >= 2 )
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">
-                    <span><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></span>
-                    <a href="#" class="toggle-nav open"></a>
+                        <h1>
+                            <?php if(is_active_sidebar('megadropdown')){ ?><a href="#" class="toggle-nav"><i class="foundicon-plus"></i></a><?php } ?>
+                            <a <?php if(is_active_sidebar('megadropdown')) echo ' id="top-bar-title" '; ?> href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+                        </h1>
                 </li>          
                 <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
             </ul>
-            <section class="top-bar-section">
-                <?php foundation_top_bar_l(); ?>
-
+            <div class="top-bar-section">
                 <?php foundation_top_bar_r(); ?>
-            </section>
+            </div>
         </nav>
     </div>
 
-<!-- start megadrop -->
-<div class="container" id="megaDrop" style="display: block;">
-  <div class="mobile-main-nav-padding">
-    <div class="row top">
-      <div class="eight columns">
-        <a href="http://zurb.com"><h4><img src="http://zurb.com/assets/logo/zurb-logo-drop-down.png"> Design Great Products Faster</h4></a>
-      </div>
-      <div class="four columns">
-        <div class="right links">
-          <a href="http://zurb.com/about">About</a> | <a href="http://zurb.com/blog">ZURBlog </a> | <a href="http://www.zurb.com/sitemap">Sitemap</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="tablet-padding">
-        <div class="three columns property" id="services">
-          <a href="http://zurb.com/services">
-            <h4>Services</h4>
-            <p>We'll help you get online products designed better and faster than ever before and set you up for future iterations.</p>
-            <span>Let's Work Together →</span>
-          </a>
-        </div>
-        
-        <div class="show-on-phones"><br><br></div>
-        <div class="three columns property" id="foundation">
-          <a href="http://foundation.zurb.com">
-            <h4>Foundation</h4>
-            <p>We developed the most advanced responsive front-end framework in the world and made it free-for-all.</p>
-            <span>Discover Foundation →</span>
-          </a>
-        </div>
-        <div class="show-on-phones"><br><br></div>
-        <div class="three columns property" id="apps">
-          <a href="http://zurb.com/apps">
-            <h4>ZURB<span class="apps">apps</span></h4>
-            <p>A powerful design suite that will help you prototype, iterate and collect feedback on your product design.</p>
-            <span>Get Started →</span>
-          </a>
-        </div>
-        
-        <div class="show-on-phones"><br><br></div>
-        <div class="three columns property" id="expo">
-          <a href="http://zurb.com/expo">
-            <h4>Expo</h4>
-            <p>We think anyone can design great products. We'll share our ideas, thoughts and design resources to show you how to do it.</p>
-            <span>Learn More →</span>
-          </a>
-        </div>
-      </div>
-    </div>    
-  </div>
-</div>
-<!-- end megadrop -->
-
+    <?php if(is_active_sidebar('megadropdown')){ ?>
+        <div class="row" id="megadrop" style="display: none;">
+            <div class="small-12 columns">
+                <?php dynamic_sidebar( 'megadropdown' ); ?>
+            </div>
+        </div><!-- #megadrop -->
+    <?php } ?>
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
