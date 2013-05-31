@@ -61,8 +61,10 @@ if ( $paged >= 2 || $page >= 2 )
     </div>
 
     <?php if(is_active_sidebar('megadropdown')){ ?>
-        <div class="row" id="megadrop" style="display: none;">
-            <?php dynamic_sidebar( 'megadropdown' ); ?>
+        <div id="megadrop">
+            <div class="row">
+                <?php dynamic_sidebar( 'megadropdown' ); ?>
+            </div>
         </div><!-- #megadrop -->
     <?php } ?>
 

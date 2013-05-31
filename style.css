@@ -169,6 +169,8 @@ a:hover{
 ------------------------------------------*/
 #megadrop{
 	background: #252525;
+	display: none;
+	color: #fff;
 }
 #megadrop a{
 	color: #fff;
@@ -176,6 +178,9 @@ a:hover{
 #megadrop ul{
 	list-style: none;
 	padding: 0;
+}
+#megadrop .widget-title{
+	color: #fff;
 }
 /*
 = Media Queries

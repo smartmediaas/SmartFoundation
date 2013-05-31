@@ -207,7 +207,6 @@ function smart_enqueue_method() {
 }
 add_action('wp_enqueue_scripts', 'smart_enqueue_method');
 
-
 // register post-types
 
 // advanced custom fields options pages
