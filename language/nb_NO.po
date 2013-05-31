@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart Foundation Panels 4 vv1.2\n"
+"Project-Id-Version: Smart Foundation Panels 4 vv1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-05-30 08:35:55+0000\n"
+"PO-Revision-Date: 2013-05-31 12:14:32+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -177,7 +177,7 @@ msgstr "Oops! Denne siden finnes ikke."
 msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
 msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
 
-#: header.php:87
+#: header.php:89
 #@ smart_foundation
 msgid "Banner"
 msgstr "Banner"
@@ -241,22 +241,22 @@ msgstr "Hovedmeny"
 msgid "Mobile Menu"
 msgstr "Mobilmeny"
 
-#: functions.php:133
+#: functions.php:132
 #@ smart_foundation
 msgid "Sidebar"
 msgstr "Widgetområde"
 
-#: functions.php:161
+#: functions.php:160
 #@ smart_foundation
 msgid "Footer 1"
 msgstr "Bunnområde 1"
 
-#: functions.php:170
+#: functions.php:169
 #@ smart_foundation
 msgid "Footer 2"
 msgstr "Bunnområde 2"
 
-#: functions.php:179
+#: functions.php:178
 #@ smart_foundation
 msgid "Footer 3"
 msgstr "Bunnområde 3"
@@ -271,8 +271,13 @@ msgstr "Tilbake"
 msgid "Menu"
 msgstr "Meny"
 
-#: functions.php:142
+#: functions.php:141
 #@ smart_foundation
 msgid "Megadropdown"
 msgstr ""
+
+#: footer.php:27
+#@ smart_foundation
+msgid "Built on WordPress by"
+msgstr "Bygget på WordPress av"
 

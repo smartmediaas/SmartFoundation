@@ -24,7 +24,7 @@
     
     <div id="site-generator" class="row">
         <div class="large-12 columns">
-            Nettløsningen er levert av <a href="http://smartmedia.no/" title="Trykk her for å gå til nettsiden" target="_blank">Smart Media AS</a>
+            <?php _e('Built on WordPress by', 'smart_foundation'); ?> <a href="http://smartmedia.no/" title="Trykk her for å gå til nettsiden" target="_blank">Smart Media AS</a>
             <!-- <span class="sep"> | </span>
     Design av <a href="http://www.wow-medialab.com" title="Trykk her for å gå til nettsiden" target="_blank">WOW medialab</a> -->
         </div>
