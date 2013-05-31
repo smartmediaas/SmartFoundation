@@ -43,7 +43,7 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div class="top-bar-container fixed contain-to-grid show-for-small">
+    <div class="top-bar-container fixed contain-to-grid">
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">

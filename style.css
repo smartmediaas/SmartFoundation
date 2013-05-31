@@ -3,7 +3,7 @@ Theme Name: Smart Foundation Panels 4
 Description: Smart Foundation 4 with CSS3 panels
 Author: Smart Media AS
 Author URI: http://smartmedia.no/
-Version: v1.2
+Version: v1.0
 */
 
 /*
@@ -46,11 +46,6 @@ a:hover{
 ------------------------------------------*/
 #site-header{
     border-bottom: 1px solid #dddddd;
-}
-#site-header #sidebarButton { 
-	float: left;
-	margin-top: 60px;
-	margin-bottom: -1px;
 }
 #site-banner img{
 	width: 100%;
@@ -169,7 +164,6 @@ a:hover{
 	margin-right: 80px;
 	padding-left: 0;
 }
-
 /*
 = Mega Dropdown
 ------------------------------------------*/
@@ -192,15 +186,5 @@ a:hover{
     }
     #page{
 		margin-top: 0;
-	}
-	.top-bar{
-		margin: 0;
-	}
-	.top-bar-section ul{
-		padding: 0;
-	}
-	.top-bar-section ul.dropdown li > a,
-	.top-bar-section ul li > a{
-		padding: 8px 15px;
 	}
 }
