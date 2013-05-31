@@ -9,11 +9,7 @@ Version: v1.2
 /*
 = Fonts
 ------------------------------------------*/
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Gentium+Book+Basic:400,400italic,700,700italic);*/
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Gentium Book Basic', serif;
-*/
+
 
 
 /*
@@ -21,7 +17,6 @@ font-family: 'Gentium Book Basic', serif;
 ------------------------------------------*/
 body{
     color: #5a5a5a;
-    font-family: 'Gentium Book Basic', serif;
     line-height: 1.4em;
     background: transparent;
 }
@@ -30,7 +25,6 @@ body{
     margin-bottom: 14px;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Open Sans', sans-serif;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
     text-decoration: none;
@@ -39,7 +33,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /*
@@ -78,7 +72,6 @@ a:hover{
 }
 .main-navigation a {
 	display: block;
-    font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	padding: 0.5em 0 0.5em 1em;
 }
@@ -147,20 +140,6 @@ a:hover{
 /*
 = Topbar
 ------------------------------------------*/
-.top-bar .title-area{
-	padding: 0;
-	margin: 0;
-}
-.top-bar-section ul{
-	padding: 0;
-}
-.top-bar-section ul.dropdown li > a,
-.top-bar-section ul li > a{
-	padding: 0 0 0 15px;
-}
-.contain-to-grid .top-bar{
-	margin-bottom: 0;
-}
 .toggle-nav{
 	-webkit-transition: all 500ms ease-in-out;
 	-moz-transition: all 500ms ease-in-out;
