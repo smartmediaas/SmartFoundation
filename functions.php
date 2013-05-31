@@ -16,8 +16,8 @@ function smart_foundation_setup(){
 	// add custom menus
 	add_theme_support('menus');
 	register_nav_menus( array(
-		'main-menu' => __('Main Menu', 'smart_foundation'), // registers the menu in the WordPress admin menu editor
-		'top-bar-r' => __('Mobile Menu', 'smart_foundation'),
+		'main-menu' => __( 'Primary Menu', 'smart_foundation' ), // registers the menu in the WordPress admin menu editor
+		'top-bar-r' => __('Top bar menu', 'smart_foundation'),
 		//'top-bar-l' => 'Left Top Bar', // registers foundation top bar menu
 	) );
 

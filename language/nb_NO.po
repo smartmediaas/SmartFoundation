@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Smart Foundation Panels 4 vv1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-05-31 12:14:32+0000\n"
+"PO-Revision-Date: 2013-05-31 12:49:23+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -231,16 +231,6 @@ msgstr ""
 msgid "Both comments and trackbacks are currently closed."
 msgstr ""
 
-#: functions.php:19
-#@ smart_foundation
-msgid "Main Menu"
-msgstr "Hovedmeny"
-
-#: functions.php:20
-#@ smart_foundation
-msgid "Mobile Menu"
-msgstr "Mobilmeny"
-
 #: functions.php:132
 #@ smart_foundation
 msgid "Sidebar"
@@ -274,10 +264,25 @@ msgstr "Meny"
 #: functions.php:141
 #@ smart_foundation
 msgid "Megadropdown"
-msgstr ""
+msgstr "Megameny"
 
 #: footer.php:27
 #@ smart_foundation
 msgid "Built on WordPress by"
 msgstr "Bygget på WordPress av"
+
+#: footer.php:29
+#@ smart_foundation
+msgid "Design by"
+msgstr "Design av"
+
+#: functions.php:19
+#@ smart_foundation
+msgid "Primary Menu"
+msgstr "Hovedmeny"
+
+#: functions.php:20
+#@ smart_foundation
+msgid "Top bar menu"
+msgstr "Toppmeny"
 
