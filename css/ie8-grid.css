@@ -435,3 +435,52 @@
 .lt-ie9 img.size-auto, .lt-ie9 img.size-full, .lt-ie9 img.size-large, .lt-ie9 img.size-medium { 
 	width:100%;
 }
+.lt-ie9 .small-1 {
+    position: relative;
+    width: 8.33333%;
+}
+.lt-ie9 .small-2 {
+    position: relative;
+    width: 16.6667%;
+}
+.lt-ie9 .small-3 {
+    position: relative;
+    width: 25%;
+}
+.lt-ie9 .small-4 {
+    position: relative;
+    width: 33.3333%;
+}
+.lt-ie9 .small-5 {
+    position: relative;
+    width: 41.6667%;
+}
+.lt-ie9 .small-6 {
+    position: relative;
+    width: 50%;
+}
+.lt-ie9 .small-7 {
+    position: relative;
+    width: 58.3333%;
+}
+.lt-ie9 .small-8 {
+    position: relative;
+    width: 66.6667%;
+}
+.lt-ie9 .small-9 {
+    position: relative;
+    width: 75%;
+}
+.lt-ie9 .small-10 {
+    position: relative;
+    width: 83.3333%;
+}
+.lt-ie9 .small-11 {
+    position: relative;
+    width: 91.6667%;
+}
+.lt-ie9 .small-12 {
+    position: relative;
+    width: 100%;
+}
+
