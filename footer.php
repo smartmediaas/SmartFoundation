@@ -26,7 +26,11 @@
         <div class="large-12 columns">
             <?php _e('Built on WordPress by', 'smart_foundation'); ?> <a href="http://smartmedia.no/" title="Trykk her for å gå til nettsiden" target="_blank">Smart Media AS</a>
             <!-- <span class="sep"> | </span>
+<<<<<<< HEAD
     <?php _e('Design by', 'smart_foundation'); ?> <a href="http://www.wow-medialab.com" title="Trykk her for å gå til nettsiden" target="_blank">WOW medialab</a> -->
+=======
+    Design av <a href="http://www.wow-medialab.com" title="Trykk her for å gå til nettsiden" target="_blank">WOW medialab</a> -->
+>>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
         </div>
     </div>
 

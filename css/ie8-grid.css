@@ -434,6 +434,7 @@
 }
 .lt-ie9 img.size-auto, .lt-ie9 img.size-full, .lt-ie9 img.size-large, .lt-ie9 img.size-medium { 
 	width:100%;
+<<<<<<< HEAD
 }
 .lt-ie9 .small-1 {
     position: relative;
@@ -484,3 +485,6 @@
     width: 100%;
 }
 
+=======
+}
+>>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
