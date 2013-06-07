@@ -3,11 +3,7 @@ msgstr ""
 "Project-Id-Version: Smart Foundation Panels 4 vv1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-<<<<<<< HEAD
-"PO-Revision-Date: 2013-05-31 12:49:23+0000\n"
-=======
-"PO-Revision-Date: 2013-05-31 12:14:32+0000\n"
->>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
+"PO-Revision-Date: 2013-06-07 07:07:54+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -235,40 +231,27 @@ msgstr ""
 msgid "Both comments and trackbacks are currently closed."
 msgstr ""
 
-<<<<<<< HEAD
-=======
-#: functions.php:19
-#@ smart_foundation
-msgid "Main Menu"
-msgstr "Hovedmeny"
-
-#: functions.php:20
-#@ smart_foundation
-msgid "Mobile Menu"
-msgstr "Mobilmeny"
-
->>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
-#: functions.php:132
+#: functions.php:131
 #@ smart_foundation
 msgid "Sidebar"
 msgstr "Widgetområde"
 
-#: functions.php:160
+#: functions.php:149
 #@ smart_foundation
 msgid "Footer 1"
 msgstr "Bunnområde 1"
 
-#: functions.php:169
+#: functions.php:158
 #@ smart_foundation
 msgid "Footer 2"
 msgstr "Bunnområde 2"
 
-#: functions.php:178
+#: functions.php:167
 #@ smart_foundation
 msgid "Footer 3"
 msgstr "Bunnområde 3"
 
-#: footer.php:38
+#: footer.php:42
 #@ smart_foundation
 msgid "Back"
 msgstr "Tilbake"
@@ -278,22 +261,17 @@ msgstr "Tilbake"
 msgid "Menu"
 msgstr "Meny"
 
-#: functions.php:141
+#: functions.php:140
 #@ smart_foundation
 msgid "Megadropdown"
-<<<<<<< HEAD
 msgstr "Megameny"
-=======
-msgstr ""
->>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
 
 #: footer.php:27
 #@ smart_foundation
 msgid "Built on WordPress by"
 msgstr "Bygget på WordPress av"
 
-<<<<<<< HEAD
-#: footer.php:29
+#: footer.php:30
 #@ smart_foundation
 msgid "Design by"
 msgstr "Design av"
@@ -308,5 +286,3 @@ msgstr "Hovedmeny"
 msgid "Top bar menu"
 msgstr "Toppmeny"
 
-=======
->>>>>>> 41dd9d3a664c526e5318342b313ce0126ae0a37a
