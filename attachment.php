@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="primary" class="large-8 columns image-attachment">
+<div id="primary" class="large-12 columns image-attachment">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -112,5 +112,5 @@
 
 	<?php endwhile; // end of the loop. ?>
 </div><!-- #primary -->
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 <?php get_footer(); ?>
