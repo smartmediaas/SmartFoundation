@@ -60,15 +60,17 @@ if ( $paged >= 2 || $page >= 2 )
                 <?php foundation_top_bar_r(); ?>
             </section>
         </nav>
+        <!-- #megadrop -->
+        <?php if(is_active_sidebar('megadropdown')){ ?>
+            <div id="megadrop">
+                <div class="row">
+                    <?php dynamic_sidebar( 'megadropdown' ); ?>
+                </div>
+            </div><!-- #megadrop -->
+        <?php } ?>
     </div>
 
-    <?php if(is_active_sidebar('megadropdown')){ ?><!-- #megadrop -->
-        <div id="megadrop" class="fixed">
-            <div class="row">
-                <?php dynamic_sidebar( 'megadropdown' ); ?>
-            </div>
-        </div><!-- #megadrop -->
-    <?php } ?>
+
     
 
     <div id="page" class="row">

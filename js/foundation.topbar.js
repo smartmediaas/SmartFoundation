@@ -88,22 +88,6 @@
               .toggleClass('expanded')
               .css('max-height', '');
           }
-
-          if (!topbar.hasClass('expanded')) {
-            if (topbar.hasClass('fixed')) {
-              topbar.parent().addClass('fixed');
-              topbar.removeClass('fixed');
-              $('body').css('padding-top',offst);
-            }
-          } else if (topbar.parent().hasClass('fixed')) {
-            topbar.parent().removeClass('fixed');
-            topbar.addClass('fixed');
-            $('body').css('padding-top','0');
-
-            if (self.settings.scrolltop) {
-              window.scrollTo(0,0);
-            }
-          }
         })
 
         .on('mouseenter mouseleave', '.top-bar li', function (e) {
