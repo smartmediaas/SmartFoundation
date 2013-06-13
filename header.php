@@ -43,30 +43,33 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div class="top-bar-container fixed contain-to-grid show-for-small">
+    <div class="fixed contain-to-grid">
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">
-                        <h1>
-                            <?php if(is_active_sidebar('megadropdown')){ ?><a href="#" class="toggle-nav"><i class="foundicon-plus"></i></a><?php } ?>
-                            <a <?php if(is_active_sidebar('megadropdown')) echo ' id="top-bar-title" '; ?> href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-                        </h1>
+                    <h1>
+                        <?php if(is_active_sidebar('megadropdown')){ ?><a href="#" class="toggle-mega"><i class="foundicon-plus"></i></a><?php } ?>
+                        <a <?php if(is_active_sidebar('megadropdown')) echo ' id="top-bar-title" '; ?> href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+                    </h1>
                 </li>          
                 <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
             </ul>
             <section class="top-bar-section">
+                <?php // foundation_top_bar_l(); ?>
+
                 <?php foundation_top_bar_r(); ?>
             </section>
         </nav>
     </div>
 
-    <?php if(is_active_sidebar('megadropdown')){ ?>
-        <div id="megadrop">
+    <?php if(is_active_sidebar('megadropdown')){ ?><!-- #megadrop -->
+        <div id="megadrop" class="fixed">
             <div class="row">
                 <?php dynamic_sidebar( 'megadropdown' ); ?>
             </div>
         </div><!-- #megadrop -->
     <?php } ?>
+    
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">

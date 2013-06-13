@@ -17,17 +17,10 @@ Version: v1.0
 ------------------------------------------*/
 body{
     color: #5a5a5a;
-    line-height: 1.4em;
     background: transparent;
 }
 #page{
     background: #ffffff;
-    margin-bottom: 14px;
-}
-h1,h2,h3,h4,h5,h6{
-}
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
-    text-decoration: none;
 }
 a{
     text-decoration: none;
@@ -35,7 +28,6 @@ a{
 a:hover{
     text-decoration: none;
 }
-
 /*
 = Structure
 ------------------------------------------*/
@@ -135,7 +127,7 @@ a:hover{
 /*
 = Topbar
 ------------------------------------------*/
-.toggle-nav{
+.toggle-mega{
 	-webkit-transition: all 500ms ease-in-out;
 	-moz-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
@@ -143,10 +135,10 @@ a:hover{
 	float: left;
 	opacity: 0.5;
 }
-.toggle-nav:hover{
+.toggle-mega:hover{
 	text-decoration: none;
 }
-.toggle-nav.open{
+.toggle-mega.open{
 	-moz-transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
 	-o-transform: rotate(135deg);
@@ -171,6 +163,7 @@ a:hover{
 	background: #252525;
 	display: none;
 	color: #fff;
+	top: 45px;
 }
 #megadrop a{
 	color: #fff;
