@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart Foundation Panels 4 vv1.0\n"
+"Project-Id-Version: Smart Foundation 4 vv1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-06-07 07:07:54+0000\n"
+"PO-Revision-Date: 2013-06-14 08:43:39+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -24,13 +24,13 @@ msgstr ""
 #, php-format
 #@ smart_foundation
 msgid "<cite class=\"fn\">%s</cite>"
-msgstr ""
+msgstr "<cite class=\"fn\">%s</cite>"
 
 #: comments.php:8
 #, php-format
 #@ smart_foundation
 msgid "%1$s"
-msgstr ""
+msgstr "%1$s"
 
 #: comments.php:9
 #@ smart_foundation
@@ -177,59 +177,59 @@ msgstr "Oops! Denne siden finnes ikke."
 msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
 msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
 
-#: header.php:89
+#: header.php:94
 #@ smart_foundation
 msgid "Banner"
 msgstr "Banner"
 
 #: attachment.php:14
 #, php-format
-#@ _s
+#@ smart_foundation
 msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
-msgstr ""
+msgstr "Publisert <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> den <a href=\"%3$s\" title=\"Lenke til stort bilde\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title=\"Tilbake til %7$s\" rel=\"gallery\">%8$s</a>"
 
 #: attachment.php:25
 #: attachment.php:103
-#@ _s
+#@ smart_foundation
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
 #: attachment.php:29
-#@ _s
+#@ smart_foundation
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
-msgstr ""
+msgstr "<span class=\"meta-nav\">&larr;</span> Forrige"
 
 #: attachment.php:30
-#@ _s
+#@ smart_foundation
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
+msgstr "Neste <span class=\"meta-nav\">&rarr;</span>"
 
 #: attachment.php:86
-#@ _s
+#@ smart_foundation
 msgid "Pages:"
-msgstr ""
+msgstr "Sider:"
 
 #: attachment.php:95
 #, php-format
-#@ _s
+#@ smart_foundation
 msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr ""
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Skriv en kommentar\">Skriv en kommentar</a> eller legg igjen en tilbakeping: <a class=\"trackback-link\" href=\"%s\" title=\"Tilbakeping for ditt innlegg\" rel=\"trackback\">Tilbakepingadresse</a>."
 
 #: attachment.php:97
 #, php-format
-#@ _s
+#@ smart_foundation
 msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr ""
+msgstr "Kommentarfeltet er stengt, men du kan legge igjen et tilbakeping: <a class=\"trackback-link\" href=\"%s\" title=\"Tilbakepingsadresse for ditt innlegg\" rel=\"trackback\">Tilbakepingsadresse</a>."
 
 #: attachment.php:99
-#@ _s
+#@ smart_foundation
 msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
-msgstr ""
+msgstr "Tilbakeping er stengt, men du kan <a class=\"comment-link\" href=\"#respond\" title=\"Skriv en kommentar\">skrive en kommentar</a>."
 
 #: attachment.php:101
-#@ _s
+#@ smart_foundation
 msgid "Both comments and trackbacks are currently closed."
-msgstr ""
+msgstr "Både kommentarfeltet og tilbakeping er stengt."
 
 #: functions.php:131
 #@ smart_foundation
@@ -251,7 +251,7 @@ msgstr "Bunnområde 2"
 msgid "Footer 3"
 msgstr "Bunnområde 3"
 
-#: footer.php:42
+#: footer.php:38
 #@ smart_foundation
 msgid "Back"
 msgstr "Tilbake"
@@ -271,7 +271,7 @@ msgstr "Megameny"
 msgid "Built on WordPress by"
 msgstr "Bygget på WordPress av"
 
-#: footer.php:30
+#: footer.php:29
 #@ smart_foundation
 msgid "Design by"
 msgstr "Design av"
