@@ -223,11 +223,10 @@ function replace_uploaded_image($image_data) {
 add_filter('wp_generate_attachment_metadata','replace_uploaded_image');
 
 // register post-types
-
 // advanced custom fields options pages
-//if(function_exists("register_options_page")){
+// if(function_exists("register_options_page")){
 //    register_options_page('Header');
 //    register_options_page('Footer');
-//}
+// }
 
 ?>
