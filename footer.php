@@ -36,6 +36,7 @@
             $(document).foundation('topbar', {
                 custom_back_text: true,
                 back_text: "<?php _e('Back', 'smart_foundation'); ?>",
+                scrolltop: false,
             });
     });
 </script>

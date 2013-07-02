@@ -43,7 +43,7 @@ if ( $paged >= 2 || $page >= 2 )
 
 <body <?php body_class(); ?>>
     
-    <div class="fixed contain-to-grid">
+    <div class="fixed contain-to-grid show-for-small">
         <nav class="top-bar">
             <ul class="title-area">
                 <li class="name">
@@ -75,8 +75,8 @@ if ( $paged >= 2 || $page >= 2 )
 
     <div id="page" class="row">
         <div id="inner-page" class="large-12 columns">
-            <header id="site-header" class="row">
-                <div class="large-12 columns hide-for-small">
+            <header id="site-header" class="row hide-for-small">
+                <div class="large-12 columns">
                     <div id="logos" class="row">
                         <div id="site-title" class="large-12 columns">
                             <h1>
