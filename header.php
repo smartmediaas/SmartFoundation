@@ -52,7 +52,7 @@ if ( $paged >= 2 || $page >= 2 )
                         <a <?php if(is_active_sidebar('megadropdown')) echo ' id="top-bar-title" '; ?> href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
                     </h1>
                 </li>          
-                <li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li>
+                <?php if(has_nav_menu('top-bar-r')){ ?><li class="toggle-topbar menu-icon"><a href="#"><span><?php _e('Menu', 'smart_foundation'); ?></span></a></li><?php } ?>
             </ul>
             <section class="top-bar-section">
                 <?php // foundation_top_bar_l(); ?>
