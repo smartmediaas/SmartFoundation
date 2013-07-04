@@ -4,7 +4,7 @@ Description: SmartFoundation with Megadropdown
 Github Theme URI: https://github.com/smartmediaas/SmartFoundation
 Author: Smart Media AS
 Author URI: http://smartmedia.no/
-Version: 1.0.2
+Version: 1.0.3
 */
 
 /*
@@ -126,6 +126,7 @@ a:hover{
 	-ms-transition: all 500ms ease-in-out;
 	float: left;
 	opacity: 0.5;
+	margin-right: -15px;
 }
 .toggle-mega:hover{
 	text-decoration: none;
@@ -146,7 +147,6 @@ a:hover{
 .top-bar .name h1 a#top-bar-title{
 	overflow: hidden;
 	margin-right: 80px;
-	padding-left: 0;
 }
 /*
 = Mega Dropdown
