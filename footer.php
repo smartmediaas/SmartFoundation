@@ -33,11 +33,11 @@
 <?php wp_footer(); ?>
 <script>
     jQuery(document).ready(function($){
-            $(document).foundation('topbar', {
-                custom_back_text: true,
-                back_text: "<?php _e('Back', 'smart_foundation'); ?>",
-                scrolltop: false,
-            });
+        $(document).foundation('topbar', {
+            custom_back_text: true,
+            back_text: "<?php _e('Back', 'smart_foundation'); ?>",
+            scrolltop: false,
+        });
     });
 </script>
 
