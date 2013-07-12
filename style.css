@@ -17,6 +17,7 @@ Version: 1.0.4
 = Global
 ------------------------------------------*/
 body{
+    background: transparent;
 }
 #page{
     background: #ffffff;

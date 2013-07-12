@@ -9,7 +9,6 @@
             
             <?php endwhile; ?>
 		
-            <?php smart_pagination(); ?>
         <?php else : ?>
         
             <?php get_template_part('content', 'notfound'); ?>
