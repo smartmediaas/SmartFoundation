@@ -2797,9 +2797,6 @@ label.error {
 .contain-to-grid {
   width: 100%;
   background: #111111; }
-  .contain-to-grid .top-bar {
-    margin-bottom: 1.875em; }
-
 .fixed {
   width: 100%;
   left: 0;
@@ -2812,8 +2809,7 @@ label.error {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #111111;
-  margin-bottom: 1.875em; }
+  background: #111111; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
