@@ -33,7 +33,7 @@ if ( $paged >= 2 || $page >= 2 )
     </title>
     
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="shortcut icon" href="<?php bloginfo( 'stylesheet_directory' ); ?>/images/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
