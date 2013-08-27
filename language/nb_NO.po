@@ -1,0 +1,288 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Foundation 4 vv1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-06-14 08:43:39+0000\n"
+"Last-Translator: smadmin <post@smartmedia.no>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Norwegian-Nynorsk\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: comments.php:7
+#, php-format
+#@ smart_foundation
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#: comments.php:8
+#, php-format
+#@ smart_foundation
+msgid "%1$s"
+msgstr "%1$s"
+
+#: comments.php:9
+#@ smart_foundation
+msgid "(Edit)"
+msgstr "(Rediger)"
+
+#: comments.php:14
+#@ smart_foundation
+msgid "Your comment is awaiting moderation."
+msgstr "Kommentaren din avventer behandling."
+
+#: comments.php:30
+#@ smart_foundation
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Vennligst ikke last denne siden directe. Takk!"
+
+#: comments.php:35
+#@ smart_foundation
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dette innlegget er passordbelagt. Legg inn passordet for å se kommentarene."
+
+#: comments.php:45
+#@ smart_foundation
+msgid "No Responses to"
+msgstr "Ingen kommentarer til"
+
+#: comments.php:45
+#@ smart_foundation
+msgid "One Response to"
+msgstr "En kommentar til"
+
+#: comments.php:45
+#@ smart_foundation
+msgid "% Responses to"
+msgstr "% kommentarer til"
+
+#: comments.php:52
+#@ smart_foundation
+msgid "&larr; Older comments"
+msgstr "&laquo; Eldre kommentarer"
+
+#: comments.php:53
+#@ smart_foundation
+msgid "Newer comments &rarr;"
+msgstr "Nyere kommentarer &raquo;"
+
+#: comments.php:62
+#@ smart_foundation
+msgid "Comments are closed."
+msgstr "Kommentarer er stengt."
+
+#: comments.php:69
+#@ smart_foundation
+msgid "Leave a Reply"
+msgstr "Legg igjen et svar"
+
+#: comments.php:69
+#, php-format
+#@ smart_foundation
+msgid "Leave a Reply to %s"
+msgstr "Legg igjen et svar til %s"
+
+#: comments.php:72
+#, php-format
+#@ smart_foundation
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Du må være <a href=\"%s\">innlogget</a> for å kunne kommentere."
+
+#: comments.php:76
+#, php-format
+#@ smart_foundation
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Innlogget som <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: comments.php:76
+#@ smart_foundation
+msgid "Log out of this account"
+msgstr "Logg ut av denne kontoen"
+
+#: comments.php:76
+#@ smart_foundation
+msgid "Log out &raquo;"
+msgstr "Logg ur &raquo;"
+
+#: comments.php:79
+#@ smart_foundation
+msgid "Name"
+msgstr "Navn"
+
+#: comments.php:79
+#: comments.php:83
+#@ smart_foundation
+msgid " (required)"
+msgstr "(obligatorisk)"
+
+#: comments.php:83
+#@ smart_foundation
+msgid "Email (will not be published)"
+msgstr "E-post (vil ikke bli offentliggjort)"
+
+#: comments.php:87
+#@ smart_foundation
+msgid "Website"
+msgstr "Hjemmeside"
+
+#: comments.php:92
+#@ smart_foundation
+msgid "Comment"
+msgstr "Kommenter"
+
+#: comments.php:96
+#@ smart_foundation
+msgid "Submit Comment"
+msgstr "Send kommentar"
+
+#: header.php:32
+#, php-format
+#@ toolbox
+msgid "Page %s"
+msgstr "Side %s"
+
+#: comments.php:95
+#@ smart_foundation
+msgid "You can use these tags:"
+msgstr "Du kan bruke disse taggene:"
+
+#: searchform.php:7
+#@ smart_foundation
+msgid "Search"
+msgstr "Søk"
+
+#: searchform.php:4
+#@ smart_foundation
+msgid "Search the site."
+msgstr "Søk i nettsiden."
+
+#: content-notfound.php:3
+#@ smart_foundation
+msgid "Oops! This page or post does not exist."
+msgstr "Oops! Denne siden finnes ikke."
+
+#: content-notfound.php:7
+#@ smart_foundation
+msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
+msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
+
+#: header.php:94
+#@ smart_foundation
+msgid "Banner"
+msgstr "Banner"
+
+#: attachment.php:14
+#, php-format
+#@ smart_foundation
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>"
+msgstr "Publisert <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> den <a href=\"%3$s\" title=\"Lenke til stort bilde\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title=\"Tilbake til %7$s\" rel=\"gallery\">%8$s</a>"
+
+#: attachment.php:25
+#: attachment.php:103
+#@ smart_foundation
+msgid "Edit"
+msgstr "Rediger"
+
+#: attachment.php:29
+#@ smart_foundation
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Forrige"
+
+#: attachment.php:30
+#@ smart_foundation
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neste <span class=\"meta-nav\">&rarr;</span>"
+
+#: attachment.php:86
+#@ smart_foundation
+msgid "Pages:"
+msgstr "Sider:"
+
+#: attachment.php:95
+#, php-format
+#@ smart_foundation
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Skriv en kommentar\">Skriv en kommentar</a> eller legg igjen en tilbakeping: <a class=\"trackback-link\" href=\"%s\" title=\"Tilbakeping for ditt innlegg\" rel=\"trackback\">Tilbakepingadresse</a>."
+
+#: attachment.php:97
+#, php-format
+#@ smart_foundation
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Kommentarfeltet er stengt, men du kan legge igjen et tilbakeping: <a class=\"trackback-link\" href=\"%s\" title=\"Tilbakepingsadresse for ditt innlegg\" rel=\"trackback\">Tilbakepingsadresse</a>."
+
+#: attachment.php:99
+#@ smart_foundation
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Tilbakeping er stengt, men du kan <a class=\"comment-link\" href=\"#respond\" title=\"Skriv en kommentar\">skrive en kommentar</a>."
+
+#: attachment.php:101
+#@ smart_foundation
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Både kommentarfeltet og tilbakeping er stengt."
+
+#: functions.php:131
+#@ smart_foundation
+msgid "Sidebar"
+msgstr "Widgetområde"
+
+#: functions.php:149
+#@ smart_foundation
+msgid "Footer 1"
+msgstr "Bunnområde 1"
+
+#: functions.php:158
+#@ smart_foundation
+msgid "Footer 2"
+msgstr "Bunnområde 2"
+
+#: functions.php:167
+#@ smart_foundation
+msgid "Footer 3"
+msgstr "Bunnområde 3"
+
+#: footer.php:38
+#@ smart_foundation
+msgid "Back"
+msgstr "Tilbake"
+
+#: header.php:55
+#@ smart_foundation
+msgid "Menu"
+msgstr "Meny"
+
+#: functions.php:140
+#@ smart_foundation
+msgid "Megadropdown"
+msgstr "Megameny"
+
+#: footer.php:27
+#@ smart_foundation
+msgid "Built on WordPress by"
+msgstr "Bygget på WordPress av"
+
+#: footer.php:29
+#@ smart_foundation
+msgid "Design by"
+msgstr "Design av"
+
+#: functions.php:19
+#@ smart_foundation
+msgid "Primary Menu"
+msgstr "Hovedmeny"
+
+#: functions.php:20
+#@ smart_foundation
+msgid "Top bar menu"
+msgstr "Toppmeny"
+
