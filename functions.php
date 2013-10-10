@@ -222,6 +222,12 @@ function replace_uploaded_image($image_data) {
 }
 add_filter('wp_generate_attachment_metadata','replace_uploaded_image');
 
+// Rename ACF Default Options Page
+if( function_exists('acf_set_options_page_menu') )
+{
+    acf_set_options_page_menu( __('General Information') );
+}
+
 // register post-types
 // advanced custom fields options pages
 // if(function_exists("register_options_page")){
