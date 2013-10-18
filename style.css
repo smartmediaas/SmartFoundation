@@ -150,6 +150,7 @@ ul,ol{
 }
 .top-bar .name h1 a{
 	width: auto;
+	display: inline-block;
 }
 .top-bar .name h1 a#top-bar-title{
 	overflow: hidden;
