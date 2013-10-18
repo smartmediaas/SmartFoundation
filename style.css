@@ -145,6 +145,9 @@ ul,ol{
 .top-bar ul{
     padding-left: 0;
 }
+.top-bar .name h1 {
+	display: inline;
+}
 .top-bar .name h1 a{
 	width: auto;
 }
@@ -152,6 +155,7 @@ ul,ol{
 	overflow: hidden;
 	margin-right: 80px;
 }
+
 /*
 = Mega Dropdown
 ------------------------------------------*/
