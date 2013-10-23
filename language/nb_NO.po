@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Smart Foundation 4 vv1.0\n"
+"Project-Id-Version: SmartFoundation v1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-06-14 08:43:39+0000\n"
+"PO-Revision-Date: 2013-10-23 12:47:46+0000\n"
 "Last-Translator: smadmin <post@smartmedia.no>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -177,7 +177,7 @@ msgstr "Oops! Denne siden finnes ikke."
 msgid "It looks like nothing was found on this page. Maybe you should try the searchfield below?"
 msgstr "Det ser ikke ut som noe ble funnet på denne siden. Kanskje du kan prøve en av lenkene under eller et søk?"
 
-#: header.php:94
+#: header.php:99
 #@ smart_foundation
 msgid "Banner"
 msgstr "Banner"
@@ -231,22 +231,22 @@ msgstr "Tilbakeping er stengt, men du kan <a class=\"comment-link\" href=\"#resp
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Både kommentarfeltet og tilbakeping er stengt."
 
-#: functions.php:131
+#: functions.php:132
 #@ smart_foundation
 msgid "Sidebar"
 msgstr "Widgetområde"
 
-#: functions.php:149
+#: functions.php:150
 #@ smart_foundation
 msgid "Footer 1"
 msgstr "Bunnområde 1"
 
-#: functions.php:158
+#: functions.php:159
 #@ smart_foundation
 msgid "Footer 2"
 msgstr "Bunnområde 2"
 
-#: functions.php:167
+#: functions.php:168
 #@ smart_foundation
 msgid "Footer 3"
 msgstr "Bunnområde 3"
@@ -256,12 +256,12 @@ msgstr "Bunnområde 3"
 msgid "Back"
 msgstr "Tilbake"
 
-#: header.php:55
+#: header.php:60
 #@ smart_foundation
 msgid "Menu"
 msgstr "Meny"
 
-#: functions.php:140
+#: functions.php:141
 #@ smart_foundation
 msgid "Megadropdown"
 msgstr "Megameny"
@@ -278,11 +278,11 @@ msgstr "Design av"
 
 #: functions.php:19
 #@ smart_foundation
-msgid "Primary Menu"
+msgid "Main menu"
 msgstr "Hovedmeny"
 
-#: functions.php:20
-#@ smart_foundation
-msgid "Top bar menu"
-msgstr "Toppmeny"
+#: functions.php:228
+#@ default
+msgid "General Information"
+msgstr ""
 

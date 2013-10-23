@@ -16,10 +16,10 @@ function smart_foundation_setup(){
 	// add custom menus
 	add_theme_support('menus');
 	register_nav_menus( array(
-		'main-menu' => __( 'Primary Menu', 'smart_foundation' ), // registers the menu in the WordPress admin menu editor
-		'top-bar-r' => __('Top bar menu', 'smart_foundation'),
+		'main-menu' => __( 'Meny', 'smart_foundation' ) // registers the menu in the WordPress admin menu editor
+		//'top-bar-r' => __('Top bar menu', 'smart_foundation'),
 		//'top-bar-l' => 'Left Top Bar', // registers foundation top bar menu
-	) );
+	));
 
 	// custom background and default background color.
 	$defaults = array(
@@ -54,7 +54,8 @@ function smart_foundation_setup(){
 add_action( 'after_setup_theme', 'smart_foundation_setup' );
 
 // request foundation top bar walker
-require get_template_directory() . '/includes/foundation-walker.php';
+require_once get_template_directory() . '/includes/foundation-walker.php';
+require_once get_template_directory() . '/includes/custom_fields_and_post_types.php';
 
 // clear function
 function smart_clear(){
@@ -116,9 +117,9 @@ function smart_img($imgName, $imgParam=''){
     if($imgParam == 'url'){
         $imgReturn = get_bloginfo('stylesheet_directory').'/images/'.$imgName;
     }elseif($imgParam){
-        $imgReturn = '<img id="'.$imgParam.'" src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" />';
+        $imgReturn = '<img id="'.$imgParam.'" src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
     }else{
-        $imgReturn = '<img src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" />';
+        $imgReturn = '<img src="'.get_bloginfo('stylesheet_directory').'/images/'.$imgName.'" alt="'.$imgName.'" title="'.$imgName.'" />';
     }
     echo $imgReturn;
 
@@ -223,13 +224,11 @@ function replace_uploaded_image($image_data) {
 add_filter('wp_generate_attachment_metadata','replace_uploaded_image');
 
 // Rename ACF Default Options Page
-if( function_exists('acf_set_options_page_menu') )
-{
+if( function_exists('acf_set_options_page_menu') ) {
     acf_set_options_page_menu( __('General Information') );
 }
 
-// register post-types
-// advanced custom fields options pages
+// Advanced Custom Fields Options pages
 // if(function_exists("register_options_page")){
 //    register_options_page('Header');
 //    register_options_page('Footer');
