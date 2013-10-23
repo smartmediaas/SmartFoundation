@@ -39,6 +39,10 @@ if ( $paged >= 2 || $page >= 2 )
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie8-grid.css" />
     <![endif]-->
+    <?php // Checking user agent to apply font aliasing for windows
+    if (strpos($_SERVER['HTTP_USER_AGENT'], "Windows", 0) !== FALSE) { ?>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri() . '/css/windows_aliasing.css'; ?>" />
+    <?php } ?>
     <?php wp_head(); ?>
 </head>
 
