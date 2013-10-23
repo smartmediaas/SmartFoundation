@@ -103,7 +103,7 @@ if ( $paged >= 2 || $page >= 2 )
                 <?php wp_nav_menu( 
                         array(
                             'theme_location'    => 'main-menu', 
-                            'menu'              => 'Main Menu', 
+                            'menu'              => 'Meny', 
                             'menu_class'        => 'menu large-12 columns' )); ?>
             </nav>
             

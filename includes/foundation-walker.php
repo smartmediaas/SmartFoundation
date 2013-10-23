@@ -25,9 +25,9 @@ function foundation_top_bar_r() {
     wp_nav_menu(array( 
         'container' => false,                           // remove nav container
         'container_class' => '',           		        // class of container
-        'menu' => 'main-menu',            	            // menu name
+        'menu' => '',                    	            // menu name
         'menu_class' => 'top-bar-menu right',         	// adding custom nav class
-        'theme_location' => 'top-bar-r',                // where it's located in the theme
+        'theme_location' => 'main-menu',                // where it's located in the theme
         'before' => '',                                 // before each link <a> 
         'after' => '',                                  // after each link </a>
         'link_before' => '',                            // before each link text
