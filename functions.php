@@ -137,14 +137,14 @@ function smart_widgets_init(){
         'after_title' => '</h4>',
     ) );
    
-    register_sidebar( array(
+    /* register_sidebar( array(
         'name' => __( 'Megadropdown', 'smart_foundation' ),
         'id' => 'megadropdown',
         'before_widget' => '<aside id="%1$s" class="small-6 large-3 columns widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h4 class="widget-title">',
         'after_title' => '</h4>',
-    ) );
+    ) ); */
     
     register_sidebar( array(
         'name' => __( 'Footer 1', 'smart_foundation' ),
@@ -193,7 +193,7 @@ function smart_enqueue_method() {
 	wp_enqueue_script('foundation', get_template_directory_uri() . '/js/foundation.js', array('jquery'), false, true);
 	wp_enqueue_script('f-placeholder', get_template_directory_uri() . '/js/foundation.placeholder.js', array('jquery', 'foundation'), false, true);
 	wp_enqueue_script('f-topbar', get_template_directory_uri() . '/js/foundation.topbar.js', array('jquery', 'foundation'), false, true);
-	wp_enqueue_script('f-megadrop', get_template_directory_uri() . '/js/foundation.megadrop.js', array('jquery', 'foundation'), false, true);
+	//wp_enqueue_script('f-megadrop', get_template_directory_uri() . '/js/foundation.megadrop.js', array('jquery', 'foundation'), false, true);
 }
 add_action('wp_enqueue_scripts', 'smart_enqueue_method');
 
